@@ -1,0 +1,51 @@
+{
+    "AS_Label_d142b328c18841738e9bbcab124ce793": {
+        "id": "AS_Label_d142b328c18841738e9bbcab124ce793",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "HomeForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cdbc1ce8a5af44ccbe94527b05a97ac0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ROTATE_ACTION_c036989b647e42809a6dad6c9ef9c382",
+            "type": "ROTATE_ACTION",
+            "itemType": "FORM",
+            "itemId": "HomeForm",
+            "widgetId": "LblHome",
+            "itemKUID": "cdbc1ce8a5af44ccbe94527b05a97ac0",
+            "widgetKUID": "h3a4e5d01d724a6f851f87bbaf760ecd",
+            "wType": "Label",
+            "animationObject": {
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                },
+                "rotate": "50"
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "animationId": "ROTATE_ACTION_c036989b647e42809a6dad6c9ef9c382",
+            "displayAnimationId": "ROTATE_ACTION_c036989b647e42809a6dad6c9ef9c382",
+            "forkedPlatform": "all",
+            "widgetPath": "this.view.LblHome"
+        }]
+    }
+}
