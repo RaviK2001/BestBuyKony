@@ -257,6 +257,7 @@
     "category": "app",
     "chat": "false",
     "cloud_account_guid": "72886afc-d891-4581-b1d3-9e6ba1cc15c0",
+    "cloud_env_GUID": "c58376aa-dca6-4298-b948-02a44305455c",
     "codeGeneration": "false",
     "contacts": "false",
     "cordovaModified": false,
@@ -366,6 +367,14 @@
     "keyAliasandwear": "",
     "keyStoreFilePath": "",
     "keyStoreFilePathandwear": "",
+    "kfAppInfo": {
+        "72886afc-d891-4581-b1d3-9e6ba1cc15c0": {
+            "appName": "BestBuyKeyrol",
+            "baseId": "96954978-8ac3-40c9-9369-5571d6840384",
+            "id": "96954978-8ac3-40c9-9369-5571d6840384",
+            "version": "1.0"
+        }
+    },
     "konyVizVersion": "9.2.28",
     "lastmodifiedtime": "1631920331583",
     "location": "false",

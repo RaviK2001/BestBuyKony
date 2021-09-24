@@ -11,7 +11,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "d75f7118f6e84f44b08343defb0f93cd",
+                    "kuid": "e098275a20784f92bdac109685f8274b",
                     "originalPropertyKey": "onClick",
                     "propertyIndex": 1,
                     "propertyKey": "onClickBack",
@@ -36,7 +36,25 @@
             "widgets": []
         },
         "properties": {
-            "custom": [],
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "ea53dc60740a46ffa82fcf1d83166220",
+                    "originalPropertyKey": "BackId",
+                    "propertyIndex": 3,
+                    "propertyKey": "BackId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "BackId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdb1849d0335461a8b17f859bbe3c8f5",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
             "passthrough": [
                 {
                     "access": "Enable",

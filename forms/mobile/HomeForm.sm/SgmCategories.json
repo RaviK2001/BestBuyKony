@@ -5,79 +5,7 @@
         {
             "LblCategorie": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "video games music and electronics"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "label"
-            }
-        },
-        {
-            "LblCategorie": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "label"
+                "text": ""
             }
         }
     ],
@@ -118,7 +46,7 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "counter": "012",
+    "counter": "00",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
@@ -152,7 +80,7 @@
     "retainflexpositionproperties": false,
     "retainselection": false,
     "rowTemplateId": "i878e7e898a3478ba400aec30d11ea48",
-    "rowcounter": 12,
+    "rowcounter": 0,
     "rowfocusskin": "sbdf8792aff347e3a582dd12455ceaf3",
     "rowskin": "s79cef78d07b4be8b913d2fe4f5faedc",
     "rowtemplate": "Flex0he2e99f2ad654f",
@@ -164,7 +92,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
     "separatorcolor": "aaaaaa00",
     "separatorrequired": true,

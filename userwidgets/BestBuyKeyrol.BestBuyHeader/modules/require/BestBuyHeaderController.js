@@ -6,7 +6,12 @@ define(function() {
 		},
 		//Logic for getters/setters of custom properties
 		initGettersSetters: function() {
-
-		}
+            defineGetter(this, 'BackId', () => {
+                return this._BackId;
+            });
+            defineSetter(this, 'BackId', value => {
+                this._BackId = value;
+            });
+        }
 	};
 });
