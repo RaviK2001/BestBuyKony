@@ -15,11 +15,6 @@
         0
     ],
     "_percent_": true,
-    "_pxMenuIndex": [
-        0,
-        1,
-        0
-    ],
     "_skin_": "s30ae72c72234aa3a28b39a44067ed7e",
     "_title_": null,
     "addWidgetsdone": false,
@@ -34,14 +29,12 @@
         "needAppMenu": false
     },
     "canUpdateUI": true,
-    "children": [
-        "FlxMain"
-    ],
+    "children": [],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "FormProductListController"
+            "name": "ProductImgFormController"
         }
     },
     "currentLocale": "default",
@@ -49,9 +42,9 @@
         "needAppMenu": false
     },
     "device": "iPhone11",
-    "displayorientation": 3,
+    "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "FormProductList",
+    "id": "ProductImgForm",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -69,7 +62,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "bdde585fcaa241569bcd1ea8d07abdf4",
+                "kuid": "c1893e1ccfb64e818f84e6287c31dbe3",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -80,7 +73,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "c27347ec4daa4157a2ec0b83dcb9413c",
+                        "kuid": "b225b509db854641aabfded49d2b37db",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -97,12 +90,11 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "dcfa891a07f547bf9d554d64a6fec1fa",
+    "kuid": "c8e371c0f2454fbc8bad9a2b91dda1b2",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "pagingenabled": false,
     "platform": "iphone",
     "prevDevice": "iPhone11",
     "prevPlatform": "iphone",
@@ -137,9 +129,6 @@
         "needAppMenu": false
     },
     "winphone8": {
-        "needAppMenu": false,
-        "psp": {
-            "animateHeaderFooter": false
-        }
+        "needAppMenu": false
     }
 }

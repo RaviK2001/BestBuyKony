@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "80%"
     },
     "_left_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -22,10 +22,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "scac72e6f5d9480d9b41b5057a87b8f8",
+    "_skin_": "sfd3918f00ba45dcafaf6e61f4297739",
     "_top_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -35,21 +35,19 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "BestBuyHeader",
-        "LblHome",
-        "FlxSegment"
+        "SgmCategories"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlxMain",
+    "id": "FlxSegment",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e9a9b963daee4071b7320580f041c627",
+    "kuid": "hf59ef0f36db48859b273f86b9634ab5",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "HomeForm",
+    "parent": "FlxMain",
     "pf": "HomeForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -57,6 +55,5 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

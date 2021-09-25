@@ -74,7 +74,7 @@
     "paginationconfig": {
         "position": "bottom"
     },
-    "parent": "FlxMain",
+    "parent": "FlxSegment",
     "pf": "HomeForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -92,7 +92,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectionbehavior": "default",
     "separatorcolor": "aaaaaa00",
     "separatorrequired": true,

@@ -1,11 +1,17 @@
 //Type your code here
-function CallService(callConfig,type,dom){ 
+function CallService(callConfig,dom,type){ 
   let ResultList = [];
-
   if(kony.store.getItem(callConfig.params.id) !== null){
-    dom.widget.setData(kony.store.getItem(callConfig.params.id)) 
+    dom.widget.setData(kony.store.getItem(callConfig.params.id).subCategories)
+    CategorieDeep = kony.store.getItem(callConfig.params.id).path.length
+
+    const prevId = kony.store.getItem(callConfig.params.id).path.length - 2
+    dom.backButton.backId = prevId ? prevId.id : 'cat00000'
+    dom.backButton.isVisibleback = kony.store.getItem(callConfig.params.id).path.length > 1 ? true : false
   }
   else{
+    kony.application.showLoadingScreen(null, null, constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, {});
+
     const serviceName = "BestBuyServiceKeyrol";
     const client = kony.sdk.getCurrentInstance();
 
@@ -14,48 +20,68 @@ function CallService(callConfig,type,dom){
 
     service.invokeOperation(callConfig.operationName, callConfig.headers, callConfig.params,
                             operationSuccess, operationFailure);
+    kony.application.dismissLoadingScreen();
+
   }
 
-	//succes service call
+
+  //succes service call
   function operationSuccess(res){
-       
-    if(type === 'MainCategories' ){
-      lblHome = dom.lbl;
-      kony.store.getItem(res.categories[0].id) ? 
-        dom.widget.setData(kony.store.getItem(res.categories[0].id)) :
-      MapData(res)
-
-
-    }
-    else if(type ==='SecondaryCategorie'){
-     const prevId = res.categories[0].path[res.categories[0].path.length - 1]
-     alert(prevId)
-      backButton.backId = prevId.id 
-      backButton.isVisibleback = !!backButton.backId
-      kony.store.getItem(res.categories[0].id) ? 
-        dom.widget.setData(kony.store.getItem(res.categories[0].id)) :
-      MapData(res)
-
- 
-    }
-  } 
-	//fail to call service
+    switch(type){
+      case 'categorie':
+        try{
+          const prevId = res.categories[0].path[res.categories[0].path.length - 2] 
+          dom.backButton.backId = prevId.id 
+        }
+        catch{
+          dom.backButton.backId = 'cat00000'
+          }
+          dom.backButton.isVisibleback = res.categories[0].path.length > 1 ? true : false
+          CategorieDeep = res.categories[0].path.length
+          if( kony.store.getItem(res.categories[0].id))
+          {
+            dom.widget.setData(kony.store.getItem(res.categories[0].id))
+          }
+        else{
+          MapDataCategorie(res, dom.widget) 
+        }
+        break;
+      case 'product':
+        MapDataProduct(res, dom.widget)
+        break;
+    } 
+  }
+  //fail to call service 
   function operationFailure(res){ 
-    // code for failure call back
     alert('failure in call');
   }
-  
-	//map Segment data
-  function MapData(res){
-    res.categories[0].subCategories.forEach((categorie) =>{ 
-      ResultList.push({ 
-        LblCategorie:{
-          'text' : categorie.name
-        },
-        'id': categorie.id
-      })
-    })
-    kony.store.setItem(res.categories[0].id, ResultList)
-    dom.widget.setData(ResultList)
-  } 
+
 }
+
+
+//map Segment data in categorie
+function MapDataCategorie(res,segment){
+  res.categories[0].subCategories.forEach((categorie,i) =>{ 
+    res.categories[0].subCategories[i] = {
+      LblCategorie:{
+        'text' : categorie.name 
+      },
+      'id': categorie.id
+    }
+  })
+  kony.store.setItem(res.categories[0].id,res.categories[0])
+  segment.setData(res.categories[0].subCategories)
+} 
+//map Segment data in categorie
+function MapDataProduct(res,segment){
+  res.categories[0].subCategories.forEach((categorie,i) =>{ 
+    res.categories[0].subCategories[i] = {
+      LblCategorie:{ 
+        'text' : categorie.name 
+      },
+      'id': categorie.id
+    }
+  })
+  kony.store.setItem(res.categories[0].id,res.categories[0])
+  segment.setData(res.categories[0].subCategories)
+} 
