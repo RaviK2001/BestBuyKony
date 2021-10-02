@@ -1,12 +1,12 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -22,41 +22,46 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "scac72e6f5d9480d9b41b5057a87b8f8",
+    "_skin_": "sfd3918f00ba45dcafaf6e61f4297739",
     "_top_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "BestBuyHeader",
-        "LblResults",
-        "FlxSegm"
+        "Image0e4258189d98549"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "FlxMainTemplateImgController"
+        }
+    },
     "enablescrolling": true,
-    "id": "FlxMain",
+    "id": "FlxMainTemplateImg",
     "info": null,
+    "isTemplate": true,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "bfb4a77f8478491b9a4a266f97143da9",
-    "layouttype": 4,
+    "kuid": "d59c3a807831423080bef7337f647cff",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "FormProductList",
-    "pf": "FormProductList",
+    "parent": "RowTemplateProductImg",
+    "pf": "RowTemplateProductImg",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

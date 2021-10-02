@@ -21,15 +21,15 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "ProductRowFlexMain"
+        "FlxMainTemplateImg"
     ],
     "containerId": true,
     "containerweight": 100,
     "currentLocale": "default",
-    "device": "Pixel3",
+    "device": "iPhone11",
     "displayorientation": 3,
     "enabledforidletimeout": false,
-    "id": "ProductRowTemplate",
+    "id": "RowTemplateProductImg",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -38,14 +38,14 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "jedda9ee939140b681e747703f6cc2d8",
+    "kuid": "ibf4b03da59743b5879c9b05b8883216",
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "outtransitionconfig": {
         "formTransition": "None"
     },
     "paddinginpixel": false,
-    "platform": "android",
+    "platform": "iphone",
     "prevDevice": "iPhone11",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,

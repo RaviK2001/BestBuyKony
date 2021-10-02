@@ -1,12 +1,12 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "5%"
     },
     "_margin_": [
         0,
@@ -22,35 +22,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "scac72e6f5d9480d9b41b5057a87b8f8",
+    "_skin_": "sfd3918f00ba45dcafaf6e61f4297739",
     "_top_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "60%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "BestBuyHeader",
-        "LblResults",
-        "FlxSegm"
+        "LblProductName",
+        "LblPrice",
+        "LblReview",
+        "ImgReview"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlxMain",
+    "id": "FlxProductInfo",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "bfb4a77f8478491b9a4a266f97143da9",
+    "kuid": "f489b4ee83cb4e4a8be9afd1c26ca764",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "FormProductList",
-    "pf": "FormProductList",
+    "parent": "FlxProductDetails",
+    "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

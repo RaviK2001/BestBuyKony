@@ -21,10 +21,10 @@
     "isForked": false
   },
   "fontSizeInPx": true,
-  "font_color": "333333ff",
-  "font_name": "iphoneSystem",
+  "font_color": "4b88f1ff",
+  "font_name": "Helvetica",
   "font_size": 103,
-  "font_style": "normal",
+  "font_style": "underline",
   "font_weight": "400",
   "ipad": {
     "font_name": "System",
@@ -42,7 +42,7 @@
     "font_size": 188,
     "isForked": false
   },
-  "kuid": "s33368f6c7804cf28ca1e2512ad8b669",
+  "kuid": "s5037bed51ac405886d5f58fb9ab9bd2",
   "spaan": {
     "font_name": "Helvetica",
     "font_size": 100,
@@ -78,7 +78,7 @@
     "font_size": 178,
     "isForked": false
   },
-  "wType": "Label",
+  "wType": "RichText",
   "watchos": {
     "font_name": "System",
     "font_size": 107,

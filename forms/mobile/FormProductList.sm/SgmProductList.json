@@ -5,7 +5,7 @@
         {
             "ImgProduct": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
+                "src": ""
             },
             "LblFreeShipping": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -13,285 +13,21 @@
             },
             "LblPrice": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
+                "text": ""
             },
             "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": ""
             },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
             "LblReview": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
-            }
-        },
-        {
-            "ImgProduct": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
-            },
-            "LblFreeShipping": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "!!! free Shipping !!!"
-            },
-            "LblPrice": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Price"
-            },
-            "LblProductName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Name"
-            },
-            "LblReview": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Review"
+                "text": ""
             }
         }
     ],
     "_height_": {
         "type": "string",
-        "value": "80%"
+        "value": "100%"
     },
     "_indicator_": "none",
     "_left_": {
@@ -326,7 +62,7 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "counter": "012",
+    "counter": "00",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
@@ -354,13 +90,13 @@
     "paginationconfig": {
         "position": "bottom"
     },
-    "parent": "FlxMain",
+    "parent": "FlxSegm",
     "pf": "FormProductList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainselection": false,
     "rowTemplateId": "jedda9ee939140b681e747703f6cc2d8",
-    "rowcounter": 12,
+    "rowcounter": 0,
     "rowfocusskin": "sbdf8792aff347e3a582dd12455ceaf3",
     "rowskin": "s79cef78d07b4be8b913d2fe4f5faedc",
     "rowtemplate": "ProductRowFlexMain",
@@ -372,7 +108,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
     "separatorcolor": "aaaaaa00",
     "separatorrequired": true,

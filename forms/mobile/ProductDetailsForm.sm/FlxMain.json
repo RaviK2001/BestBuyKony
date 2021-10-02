@@ -5,8 +5,8 @@
         "value": "100%"
     },
     "_left_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -24,8 +24,8 @@
     "_percent_": true,
     "_skin_": "scac72e6f5d9480d9b41b5057a87b8f8",
     "_top_": {
-        "type": "number",
-        "value": "0"
+        "type": "string",
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -36,8 +36,12 @@
     "canUpdateUI": true,
     "children": [
         "BestBuyHeader",
-        "LblResults",
-        "FlxSegm"
+        "FlxProductDetails",
+        "FlxDescription",
+        "BtnAddToCar",
+        "FlxDivider",
+        "FlxReviews",
+        "SgmReviews"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -46,11 +50,11 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "bfb4a77f8478491b9a4a266f97143da9",
+    "kuid": "c8ae8b80c9d64cbbad87b3287befda56",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "FormProductList",
-    "pf": "FormProductList",
+    "parent": "ProductDetailsForm",
+    "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

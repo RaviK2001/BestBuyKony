@@ -4,11 +4,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "150dp"
+        "value": "100dp"
     },
     "_left_": {
         "type": "string",
-        "value": "10.00%"
+        "value": "10%"
     },
     "_margin_": [
         0,
@@ -26,24 +26,23 @@
     "_src_": "imagedrag.png",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
-        "value": "30%"
+        "value": "250px"
     },
     "canUpdateUI": true,
-    "containerId": true,
     "containerweight": 100,
     "id": "ImgProduct",
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "af5eea29267b4306824fcfe3497aee5e",
+    "kuid": "cd8ae160a0584529a8f6099e2498691f",
     "name": "kony.ui.Image2",
-    "parent": "FlxProductDetails",
-    "pf": "ProductRowTemplate",
+    "parent": "FlxImgs",
+    "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "srcType": 1,
