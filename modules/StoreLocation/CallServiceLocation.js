@@ -1,12 +1,10 @@
 //Type your code here
-function CallServiceLocation(callConfig,type){ 
+function CallServiceLocation(callConfig,mapWidget){ 
   kony.application.showLoadingScreen(null, null, constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, {});
 
   const serviceName = "BestBuyServiceKeyrol";
   const client = kony.sdk.getCurrentInstance(); 
-
   const service = client.getIntegrationService(serviceName);
-  const ErrorMaping = false
 
   service.invokeOperation(callConfig.operationName, callConfig.headers, callConfig.params,
                           operationSuccess, operationFailure);
@@ -14,9 +12,12 @@ function CallServiceLocation(callConfig,type){
 
   //succes service call
   function operationSuccess(res){    
-    const Cities =  MapDataLocation(res) 
+    const Cities = MapDataLocation(res)
     if(Cities.length > 0){
-          alert(Cities) 
+
+      //             mapWidget.addPin(Cities[0])
+      AddPinsToMap(Cities,mapWidget) 
+
 
     }
 
@@ -29,29 +30,26 @@ function CallServiceLocation(callConfig,type){
 
   }
 
+
 } 
 
 function MapDataLocation(res,elements){ 
   const CityMappedArray = []
-
   if(res.stores.length > 0) {
 
-    res.products.map((city,i) =>{  
+    res.stores.map((city,i) =>{  
+      if(city.lat && city.lng){
+        CityMappedArray.push({
+          'id': city.storeId,
+          'lat': city.lat,
+          'lon': city.lng,
+          'name': city.name,
+          'desc': city.hours,
+          'showCallout' : true
 
-      CityMappedArray.push({
+        }) 
+      }
 
-        'hours': city.hours,
-        'address': city.address,
-        'lng': city.lng,
-        'city': city.city,
-        'name': city.name,
-        'region': city.region,
-        'storeId': city.storeId,
-        'lat': city.lat,
-        'longName': city.longName,
-
-
-      }) 
     }) 
   }
   else{
