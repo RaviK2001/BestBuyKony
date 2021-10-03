@@ -35,13 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "BestBuyHeader",
-        "FlxProductDetails",
-        "FlxDescription",
-        "BtnAddToCar",
-        "FlxDivider",
-        "FlxReviews",
-        "SgmReviews"
+        "FlxBody",
+        "BestBuyHeader"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -51,7 +46,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "c8ae8b80c9d64cbbad87b3287befda56",
-    "layouttype": 4,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "ProductDetailsForm",
     "pf": "ProductDetailsForm",

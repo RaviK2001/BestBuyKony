@@ -36,8 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "BestBuyHeader",
-        "LblHome",
-        "FlxSegment"
+        "FlxBody"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -47,7 +46,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "e9a9b963daee4071b7320580f041c627",
-    "layouttype": 4,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "HomeForm",
     "pf": "HomeForm",

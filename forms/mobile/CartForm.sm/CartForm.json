@@ -34,7 +34,7 @@
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "CarFormController"
+            "name": "CartFormController"
         }
     },
     "currentLocale": "default",
@@ -44,7 +44,7 @@
     "device": "iPhone11",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "CarForm",
+    "id": "CartForm",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,

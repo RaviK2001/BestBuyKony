@@ -61,7 +61,7 @@
     "isvisible": true,
     "kuid": "bf86d5173c5541e09b8126b1cd930bd6",
     "name": "kony.ui.Label",
-    "parent": "FlxMain",
+    "parent": "FlxBody",
     "pf": "FormProductList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

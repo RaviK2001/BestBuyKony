@@ -35,7 +35,7 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "Image0e4258189d98549"
+        "ProductImg"
     ],
     "clipbounds": true,
     "containerId": true,

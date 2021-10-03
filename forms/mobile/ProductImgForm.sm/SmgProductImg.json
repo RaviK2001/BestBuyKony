@@ -3,61 +3,61 @@
     "DNDConfig": null,
     "_data_": [
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
         },
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
         },
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
         },
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
         },
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
         },
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
         },
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
         },
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
         },
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
         },
         {
-            "Image0e4258189d98549": {
+            "ProductImg": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "imagedrag.png"
             }
@@ -154,7 +154,7 @@
     "widgetalignment": 5,
     "widgetdatamap": {
         "FlxMainTemplateImg": "FlxMainTemplateImg",
-        "Image0e4258189d98549": "Image0e4258189d98549"
+        "ProductImg": "ProductImg"
     },
     "zindex": 1
 }

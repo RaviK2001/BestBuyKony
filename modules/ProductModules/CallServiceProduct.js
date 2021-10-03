@@ -1,5 +1,5 @@
 //Type your code here
-function CallServiceProduct(callConfig,dom,type){ 
+function CallServiceProduct(callConfig,elements,type){ 
   kony.application.showLoadingScreen(null, null, constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, {});
 
   const serviceName = "BestBuyServiceKeyrol";
@@ -14,8 +14,8 @@ function CallServiceProduct(callConfig,dom,type){
 
   //succes service call
   function operationSuccess(res){
-          MapDataProduct(res, dom.widget)
-
+    MapDataProduct(res, elements)
+    LastProductId = callConfig.headers.id
 
   }
   //fail to call service 
@@ -26,13 +26,13 @@ function CallServiceProduct(callConfig,dom,type){
 
   }
 
-}
+} 
 
 //map Segment data in categorie
-function MapDataProduct(res,segment){
+function MapDataProduct(res,elements){ 
   if(res.products.length > 0) {
     let MainImg = ''
-          const arry = []
+    const arry = []
 
     res.products.map((product,i) =>{  
       product.images.forEach((image) =>{
@@ -52,17 +52,19 @@ function MapDataProduct(res,segment){
         'LblReview':{
           'text': product.customerReviewAverage
         },
-        'shortDescription': product.shortDescription
+        'shortDescription': product.shortDescription,
+        'backId' : product.categoryPath[product.categoryPath.length - 1].id,
+        'sku' : product.sku
 
       })
     }) 
-          segment.setData(arry) 
+    elements.widget.setData(arry) 
 
   }
   else{
     alert('Error, Cant display categories at this moment')
-    ErrorMaping = true
-    segment.setData([])
+    backProduct(elements.backId)
+    elements.widget.setData([])
   }
   kony.application.dismissLoadingScreen(); 
 } 

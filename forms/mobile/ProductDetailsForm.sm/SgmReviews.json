@@ -2,16 +2,186 @@
     "@class": "com.kony.gen.viz.model.container.KVizSegment2",
     "DNDConfig": null,
     "_data_": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        },
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        },
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        },
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        },
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        },
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        },
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        },
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        },
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        },
+        {
+            "ImgReview": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ratings_star_1.png"
+            },
+            "LbReviewTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "LblReview": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Review"
+            },
+            "LblReviewAutor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Price"
+            }
+        }
     ],
     "_height_": {
         "type": "string",
@@ -75,15 +245,16 @@
         "position": "bottom",
         "vdistance": 1
     },
-    "parent": "FlxMain",
+    "parent": "FlxBody",
     "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainselection": false,
+    "rowTemplateId": "cab107f95b4c4da5af3484dae7d9ed93",
     "rowcounter": 9,
     "rowfocusskin": "sbdf8792aff347e3a582dd12455ceaf3",
     "rowskin": "se351ed9dd0b4fd9a30b51c8c946cee4",
-    "rowtemplate": null,
+    "rowtemplate": "Flex0f41de8ab2f5d43",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s254737ecbb747fe88856ed08807c75b",
@@ -108,6 +279,12 @@
     "vizProps": {},
     "wType": "Segment",
     "widgetalignment": 5,
-    "widgetdatamap": {},
+    "widgetdatamap": {
+        "FlsReviews": "FlsReviews",
+        "ImgReview": "ImgReview",
+        "LbReviewTitle": "LbReviewTitle",
+        "LblReview": "LblReview",
+        "LblReviewAutor": "LblReviewAutor"
+    },
     "zindex": 1
 }

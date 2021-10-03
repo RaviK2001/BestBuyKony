@@ -4,11 +4,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "150dp"
+        "value": "50dp"
     },
     "_left_": {
         "type": "string",
-        "value": "135dp"
+        "value": "28dp"
     },
     "_margin_": [
         0,
@@ -26,28 +26,24 @@
     "_src_": "imagedrag.png",
     "_top_": {
         "type": "string",
-        "value": "15dp"
+        "value": "25dp"
     },
     "_width_": {
         "type": "string",
-        "value": "150dp"
+        "value": "80dp"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerId": true,
     "containerweight": 100,
-    "id": "Image0e4258189d98549",
+    "id": "ImgMenuItem",
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fa02d225612b4f9b8c0d945261d2964b",
+    "kuid": "f1aa8b07ce0a474d841f48b47f26bcc5",
     "name": "kony.ui.Image2",
-    "parent": "FlxMainTemplateImg",
-    "pf": "RowTemplateProductImg",
+    "parent": "FlxSgmMenu",
+    "pf": "RowTemplateSgmMenu",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "srcType": 1,

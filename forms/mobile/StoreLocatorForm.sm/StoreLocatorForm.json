@@ -15,6 +15,11 @@
         0
     ],
     "_percent_": true,
+    "_pxMenuIndex": [
+        0,
+        1,
+        5
+    ],
     "_skin_": "s30ae72c72234aa3a28b39a44067ed7e",
     "_title_": null,
     "addWidgetsdone": false,
@@ -29,7 +34,9 @@
         "needAppMenu": false
     },
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "FlxMain"
+    ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
@@ -42,7 +49,7 @@
         "needAppMenu": false
     },
     "device": "iPhone11",
-    "displayorientation": 1,
+    "displayorientation": 3,
     "enabledforidletimeout": false,
     "id": "StoreLocatorForm",
     "info": null,
@@ -96,7 +103,7 @@
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "iPhone11",
+    "prevDevice": "iPhoneSE",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

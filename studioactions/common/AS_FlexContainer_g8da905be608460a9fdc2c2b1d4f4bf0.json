@@ -1,0 +1,75 @@
+{
+    "AS_FlexContainer_g8da905be608460a9fdc2c2b1d4f4bf0": {
+        "id": "AS_FlexContainer_g8da905be608460a9fdc2c2b1d4f4bf0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "u0625dcb53414de6b32b6dc67fefd99d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "_gba65eb2cbc1414d826a9daefb96783d",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "this.view.FlxMenu.isVisible",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "false",
+                "leftWidgetKUID": "a973f55ce8bd451288998b30cae5e77b"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "_fec3761f8454478298948785a6a8bcb2",
+            "type": "ELSE_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "",
+                "operator": "===",
+                "rightValueType": "widgetprop",
+                "rightValue": ""
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled__ecaac764f17145f6809f7c8df8141684",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "COMPONENT",
+            "itemId": "userwidgetmodel",
+            "widgetId": "FlxMenu",
+            "propertyName": "isVisible",
+            "propertyValue": "true",
+            "itemKUID": "u0625dcb53414de6b32b6dc67fefd99d",
+            "widgetKUID": "a973f55ce8bd451288998b30cae5e77b",
+            "isSkinProperty": false,
+            "wType": "FlexContainer",
+            "forkedPlatform": "all",
+            "parentId": "_gba65eb2cbc1414d826a9daefb96783d",
+            "callbackType": null,
+            "widgetPath": "this.view.FlxMenu"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY___f69289b3a71e4e92b49b2d6ed29c2be0",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "COMPONENT",
+            "itemId": "userwidgetmodel",
+            "widgetId": "FlxMenu",
+            "propertyName": "isVisible",
+            "propertyValue": "false",
+            "itemKUID": "u0625dcb53414de6b32b6dc67fefd99d",
+            "widgetKUID": "a973f55ce8bd451288998b30cae5e77b",
+            "isSkinProperty": false,
+            "wType": "FlexContainer",
+            "forkedPlatform": "all",
+            "parentId": "_fec3761f8454478298948785a6a8bcb2",
+            "widgetPath": "this.view.FlxMenu"
+        }]
+    }
+}

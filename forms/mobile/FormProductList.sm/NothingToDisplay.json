@@ -54,7 +54,7 @@
         }
     },
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "e4d0eb474f7b447aa985e25fe3120b2c",
     "name": "kony.ui.Label",
     "parent": "FlxSegm",

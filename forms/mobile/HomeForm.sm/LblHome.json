@@ -61,7 +61,7 @@
     "isvisible": true,
     "kuid": "h3a4e5d01d724a6f851f87bbaf760ecd",
     "name": "kony.ui.Label",
-    "parent": "FlxMain",
+    "parent": "FlxBody",
     "pf": "HomeForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
