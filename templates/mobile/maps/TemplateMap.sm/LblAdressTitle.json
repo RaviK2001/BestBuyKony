@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "10dp"
+        "value": "30dp"
     },
     "_margin_": [
         1,
@@ -21,15 +21,15 @@
         0,
         0
     ],
-    "_skin_": "s33368f6c7804cf28ca1e2512ad8b669",
-    "_text_": "Total Review",
+    "_skin_": "s626441b303b4c5bbee3a3f5d41bad31",
+    "_text_": "Address:",
     "_top_": {
         "type": "string",
-        "value": "10dp"
+        "value": "3dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "90%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -39,9 +39,10 @@
         }
     },
     "canUpdateUI": true,
+    "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "LblReviewCount",
+    "id": "LblAdressTitle",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ee401aa6b7964396b7cfa02a47e232e6",
+    "kuid": "e0758f6f1f414361bbc7ea0bfb4b36d0",
     "name": "kony.ui.Label",
-    "parent": "FlxReviewsCount",
-    "pf": "ProductDetailsForm",
+    "parent": "FlxAddress",
+    "pf": "TemplateMap",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

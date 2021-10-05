@@ -25,7 +25,7 @@
     "_skin_": "sfd3918f00ba45dcafaf6e61f4297739",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "60%"
     },
     "_width_": {
         "type": "string",
@@ -35,7 +35,8 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "LblReviewCount"
+        "ImgArrow",
+        "SgmReviews"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -44,10 +45,10 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "j0e345d2e2b24a93b386f873f23b04ff",
-    "layouttype": 2,
+    "kuid": "bc7c7a143eac4761a74c482b22229b21",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "FlxBody",
+    "parent": "FlxMain",
     "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -55,6 +56,5 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

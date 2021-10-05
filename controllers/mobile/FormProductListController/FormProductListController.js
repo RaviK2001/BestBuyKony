@@ -29,8 +29,8 @@ define({
     //Segment animation
     this.view.SgmProductList.setAnimations({
     visible: {
-        definition: animationDefObject, 
-        config: animationConfig,
+        definition: SegmentAnimationDefObject, 
+        config: SegmentAnimationConfig,
         callbacks: null
     }
 });

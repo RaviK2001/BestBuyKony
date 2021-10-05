@@ -12,7 +12,7 @@ function CallServiceLocation(callConfig,mapWidget){
 
   //succes service call
   function operationSuccess(res){    
-    const Cities = MapDataLocation(res)
+    const Cities = MapDataLocation(res,mapWidget)
     if(Cities.length > 0){
 
       //             mapWidget.addPin(Cities[0])
@@ -33,7 +33,7 @@ function CallServiceLocation(callConfig,mapWidget){
 
 } 
 
-function MapDataLocation(res,elements){ 
+function MapDataLocation(res,mapWidget){ 
   const CityMappedArray = []
   if(res.stores.length > 0) {
 
@@ -45,7 +45,16 @@ function MapDataLocation(res,elements){
           'lon': city.lng,
           'name': city.name,
           'desc': city.hours,
-          'showCallout' : true
+          'showCallout' : true,
+          'calloutData' : {
+            'lblName':{'text':  city.name},
+            'LblAddress':{'text': city.address},
+            'LblHours':{'text': city.hours},
+            'ImgNav':{
+              'src': 'compass.png'
+            }
+          },
+          'template': 'FlxMainMap'
 
         }) 
       }

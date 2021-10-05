@@ -32,7 +32,7 @@
     },
     "android": {
         "psp": {
-            "showZoomControl": false
+            "showZoomControl": true
         }
     },
     "calloutTemplateId": "b8ac4db8f2d04bdbb8ae3b43b303a9dc",
@@ -58,5 +58,5 @@
     "screenlevelwidget": false,
     "wType": "Map",
     "zindex": 1,
-    "zoomlevel": 9
+    "zoomlevel": 10
 }

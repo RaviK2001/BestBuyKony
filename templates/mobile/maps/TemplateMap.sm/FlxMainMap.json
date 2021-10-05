@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "string",
-        "value": "80dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sfd3918f00ba45dcafaf6e61f4297739",
+    "_skin_": "s698932a83d247ac9869258e27e7f41e",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -32,8 +32,12 @@
         "value": "100%"
     },
     "allboxes": [],
+    "autogrowmode": 1,
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "FlxTitle",
+        "FlxInfo"
+    ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
@@ -49,7 +53,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "c8ff0ef2c7c24818a2e32291c4109dc5",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "TemplateMap",
     "pf": "TemplateMap",

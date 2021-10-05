@@ -14,10 +14,10 @@ define({
   
    this.view.SgmCategories.setAnimations({
     visible: {
-        definition: animationDefObject,
-        config: animationConfig,
+        definition: SegmentAnimationDefObject,
+        config: SegmentAnimationConfig, 
         callbacks: null
-    }
+    } 
 });
   }
 });

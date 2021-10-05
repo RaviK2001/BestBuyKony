@@ -205,10 +205,6 @@
         0,
         0
     ],
-    "_top_": {
-        "type": "string",
-        "value": "5%"
-    },
     "_width_": {
         "type": "string",
         "value": "100%"
@@ -245,7 +241,7 @@
         "position": "bottom",
         "vdistance": 1
     },
-    "parent": "FlxBody",
+    "parent": "FlxReviews",
     "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

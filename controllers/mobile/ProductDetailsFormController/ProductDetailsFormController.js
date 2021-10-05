@@ -14,5 +14,10 @@ define({
      this.view.BestBuyHeader.onClickBack = () => {backProduct()}
      this.view.SgmReviews.setData(Product.reviewList)
      this.view.LblReviewCount.text = Product.totalReviews
+     
+     this.view.ImgArrow.onTouchEnd =()=> { 
+animationShowHide(this.view.FlxReviews,this.view.FlxReviews.top === '94%' ? 'show' : 'hide','94%','60%')
+this.view.ImgArrow.src = this.view.FlxReviews.top === '94%' ? 'uparrow.png' : 'downarrow.png'
+     } 
   }
 });  

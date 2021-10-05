@@ -6,7 +6,7 @@ transformObject.translate(0,0);
 animationDef = {
  "0": {
                 "transform": transformProp2 
-
+ 
     },
    
     "100": {
@@ -14,10 +14,10 @@ animationDef = {
     }
 };
 
-animationConfig = {
+SegmentAnimationConfig = {
     duration: 0.5,
     fillMode: kony.anim.FILL_MODE_FORWARDS
 };
-animationDefObject = kony.ui.createAnimation(
+SegmentAnimationDefObject = kony.ui.createAnimation(
     animationDef
 );

@@ -1,12 +1,12 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "string",
-        "value": "50%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0"
     },
     "_margin_": [
         0,
@@ -25,34 +25,32 @@
     "_skin_": "sfd3918f00ba45dcafaf6e61f4297739",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "FlxProductDetails",
-        "FlxDescription",
-        "BtnAddToCar",
-        "FlxDivider",
-        "FlxReviewsCount"
+        "FlxAddress",
+        "FlxHour"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlxBody",
+    "id": "FlxInfo",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e84d19f5e5ec4449aef90f51ee35ec24",
+    "kuid": "c717c7c915674afc9323502eddcc51fa",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "FlxMain",
-    "pf": "ProductDetailsForm",
+    "parent": "FlxMainMap",
+    "pf": "TemplateMap",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
