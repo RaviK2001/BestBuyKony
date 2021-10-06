@@ -24,15 +24,14 @@ function backProduct(id){
 
 function ClickMoreImg(product) {
   let ntf = new kony.mvc.Navigation("ProductImgForm");
-
   ntf.navigate(product)
-}
+} 
 
 function SetImgs(imgArray){
   const ResultList = []
-  imgArray.map(img => {
+  imgArray.forEach(img => {
     ResultList.push({
-      'ProductImg' : {
+      'ProductImg' : { 
         'src' : img.href
       }
     })

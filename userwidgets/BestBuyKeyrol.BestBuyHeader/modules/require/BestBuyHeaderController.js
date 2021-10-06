@@ -11,6 +11,19 @@ define(function() {
     }
 
     }
+    
+    this.view.Flxsearch.onTouchStart = () => {
+      animationShowHide(this.view.SearchMenu,this.view.SearchMenu.isHided,'100%','0%')
+      this.view.SearchMenu.isHided = !this.view.SearchMenu.isHided
+      this.view.SearchMenu.isModalContainer = !this.view.SearchMenu.isHided 
+
+    }
+    this.view.SearchMenu.onClickCancel = () => {
+      animationShowHide(this.view.SearchMenu,this.view.SearchMenu.isHided,'100%','0%')
+      this.view.SearchMenu.isHided = !this.view.SearchMenu.isHided
+            this.view.SearchMenu.isModalContainer = !this.view.SearchMenu.isHided 
+
+    } 
 		},
 		//Logic for getters/setters of custom properties
 		initGettersSetters: function() {

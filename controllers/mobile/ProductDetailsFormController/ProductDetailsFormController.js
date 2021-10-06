@@ -9,15 +9,19 @@ define({
      this.view.LblReview.text =  Product.LblReview.text
      this.view.LblDescription.text = Product.shortDescription ?Product.shortDescription : 'There is not a description provided'
      this.view.ImgReview.src = `ratings_star_${Math.floor(+Product.LblReview.text)}.png`
-     this.view.RichLink.onClick = () => {
+     this.view.LblMore.onTouchStart = () => {
        ClickMoreImg(Product)}
      this.view.BestBuyHeader.onClickBack = () => {backProduct()}
      this.view.SgmReviews.setData(Product.reviewList)
      this.view.LblReviewCount.text = Product.totalReviews
-     
+     this.view.BtnAddToCar.onClick = () => { 
+       addToCar(Product) 
+     }
      this.view.ImgArrow.onTouchEnd =()=> { 
-animationShowHide(this.view.FlxReviews,this.view.FlxReviews.top === '94%' ? 'show' : 'hide','94%','60%')
+animationShowHide(this.view.FlxReviews,this.view.FlxReviews.top === '94%' ? true : false,'94%','60%')
 this.view.ImgArrow.src = this.view.FlxReviews.top === '94%' ? 'uparrow.png' : 'downarrow.png'
      } 
-  }
+  },
+  
+
 });  

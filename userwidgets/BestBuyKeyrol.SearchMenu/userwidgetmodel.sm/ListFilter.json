@@ -1,0 +1,103 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "<Select a Value>",
+    "_skin_": "s9e474a2ba684a12a7a3d53a6e76bef8",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "dropdownimage": "listboxarw.png",
+    "focusskin": "s9265fc9711b4be9b1a8865c7faeb40a",
+    "groupcells": false,
+    "id": "ListFilter",
+    "info": null,
+    "iphone": {
+        "viewType": 0
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j5c4c8cec96a465a9a0f1460ea8c9d34",
+    "masterdata": [
+        [
+            "onSale=true",
+            "On sale"
+        ],
+        [
+            "onSale=false",
+            "Not on sale"
+        ],
+        [
+            "new=true",
+            "New"
+        ],
+        [
+            "new=false",
+            "Not new"
+        ],
+        [
+            "freeShipping=true",
+            "Free Shipping"
+        ],
+        [
+            "freeShipping=false",
+            "No Free Shipping"
+        ],
+        [
+            "NotSelected",
+            "<Select a Value>"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "FlxFilter",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "NotSelected",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "NotSelected",
+        "<Select a Value>"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

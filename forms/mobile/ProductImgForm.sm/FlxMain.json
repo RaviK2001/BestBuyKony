@@ -46,7 +46,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "b017cc28c2334013b73324e44021a0f5",
-    "layouttype": 4,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "ProductImgForm",
     "pf": "ProductImgForm",

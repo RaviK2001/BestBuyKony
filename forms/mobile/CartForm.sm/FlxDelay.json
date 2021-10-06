@@ -1,5 +1,4 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizRichText",
     "DNDConfig": null,
     "_height_": {
         "type": "ref",
@@ -7,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "10%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -15,38 +14,46 @@
         0,
         0
     ],
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
         0,
         0
     ],
-    "_skin_": "s5037bed51ac405886d5f58fb9ab9bd2",
-    "_text_": "More...",
+    "_percent_": true,
+    "_skin_": "s0a485c1cf804809aad104959db2531c",
     "_top_": {
         "type": "string",
-        "value": "10dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
-    "_wrapping_": 2,
+    "allboxes": [],
+    "autogrowmode": 1,
     "canUpdateUI": true,
+    "children": [
+        "LblDelay"
+    ],
+    "clipbounds": true,
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "RichLink",
+    "enablescrolling": true,
+    "id": "FlxDelay",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "cd59afcfee594f53b9af48ee38635ccd",
-    "linkskin": "sc96fe98f65e483a8e54ee67e1b0883a",
-    "name": "kony.ui.RichText",
-    "parent": "FlxImgs",
-    "pf": "ProductDetailsForm",
+    "kuid": "eadc6a0bed3d4ced83c08f93230923f8",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "FlxBody",
+    "pf": "CartForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "wType": "RichText",
-    "widgetalignment": 5,
-    "zindex": 2
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
 }

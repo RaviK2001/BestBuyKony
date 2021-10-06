@@ -47,7 +47,7 @@
     "kuid": "a973f55ce8bd451288998b30cae5e77b",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "BestBuyHeader",
+    "parent": "FlxBody",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -1,4 +1,9 @@
-//Type your code here
+//Global variables for categories
+let CategoriesState = []
+let CategorieDeep = 0
+let elements = null 
+let LastCall = null 
+
 function OnClickCategorie(seguiWidget, sectionNumber, rowNumber, selectedState){
   if(CategorieDeep < 3){
     CallServiceCategorie(

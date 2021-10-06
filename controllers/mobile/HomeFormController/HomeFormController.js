@@ -1,6 +1,6 @@
 define({ 
 
-  onNavigate: function(id) {
+  onNavigate: function(id,clear) { 
 
     elements = {lbl:this.view.LblHome,widget: this.view.SgmCategories, backButton: this.view.BestBuyHeader};
     CallServiceCategorie(
@@ -18,6 +18,9 @@ define({
         config: SegmentAnimationConfig, 
         callbacks: null
     } 
-});
-  }
+}); 
+     
+  
+  },
+
 });

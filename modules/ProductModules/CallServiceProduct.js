@@ -30,6 +30,7 @@ function CallServiceProduct(callConfig,elements,type){
 
 //map Segment data in categorie
 function MapDataProduct(res,elements){ 
+
   if(res.products.length > 0) {
     let MainImg = ''
     const arry = []
@@ -54,7 +55,8 @@ function MapDataProduct(res,elements){
         },
         'shortDescription': product.shortDescription,
         'backId' : product.categoryPath[product.categoryPath.length - 1].id,
-        'sku' : product.sku
+        'sku' : product.sku,
+        'images': product.images
 
       })
     }) 
@@ -62,8 +64,8 @@ function MapDataProduct(res,elements){
 
   }
   else{
-    alert('Error, Cant display categories at this moment')
     backProduct(elements.backId)
+    alert('Error, Cant display categories at this moment')
     elements.widget.setData([])
   }
   kony.application.dismissLoadingScreen(); 

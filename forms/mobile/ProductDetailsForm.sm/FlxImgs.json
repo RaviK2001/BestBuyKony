@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "ImgProduct",
-        "RichLink"
+        "LblMore"
     ],
     "clipbounds": true,
     "containerweight": 100,

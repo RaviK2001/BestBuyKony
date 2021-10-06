@@ -1,0 +1,32 @@
+{
+    "AS_Form_c844a37ebf1b41f89053dd9a4ccb42ac": {
+        "id": "AS_Form_c844a37ebf1b41f89053dd9a4ccb42ac",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "HomeForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cdbc1ce8a5af44ccbe94527b05a97ac0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_j7ca6905c4c24b21843f57f95259ac09",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Hide",
+            "yesLabel": "Hide",
+            "alertMessage": "Hide",
+            "messageType": "constant",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }]
+    }
+}

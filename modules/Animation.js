@@ -2,8 +2,8 @@
 function animationShowHide(widget,status,hide,show){
 animationDef = {
     "100": {
-        "top": status === 'hide' ? hide : show
-    }
+        "top": status === true ? show : hide  
+    } 
 };
 
 animationConfig = {
@@ -15,5 +15,5 @@ animationDefObject = kony.ui.createAnimation(
 );
   
          widget.animate(animationDefObject, animationConfig, null)
-
+         
   }
