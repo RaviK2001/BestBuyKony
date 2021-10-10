@@ -1,10 +1,10 @@
 define({ 
 
-  onNavigate: function(id,clear) { 
+  onNavigate: function(id) { 
 
     elements = {lbl:this.view.LblHome,widget: this.view.SgmCategories, backButton: this.view.BestBuyHeader};
     CallServiceCategorie(
-      {operationName:'GetCategories',params:{'id': id? id : 'cat00000'},headers:{}},elements,'categorie'
+      {operationName:'GetCategories',params:{'id': id && id!==0? id : 'cat00000'},headers:{}},elements,'categorie'
     );
 
     this.view.SgmCategories.onRowClick = OnClickCategorie;

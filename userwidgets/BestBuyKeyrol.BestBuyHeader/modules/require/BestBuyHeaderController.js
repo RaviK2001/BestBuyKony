@@ -1,44 +1,53 @@
 define(function() {
 
-	return {
-		constructor: function(baseConfig, layoutConfig, pspConfig) {
-	this.view.SgmMenu.onRowClick = MenuCLick
-    this.view.FlxBreadMenu.onTouchStart = () => {
-    if (this.view.FlxMenu.isVisible == false) {
-        this.view.FlxMenu.isVisible = true;
-    } else {
-        this.view.FlxMenu.isVisible = false;
-    }
+  return {
+    constructor: function(baseConfig, layoutConfig, pspConfig) {
+      this.view.SgmMenu.onRowClick = () => {
+        const currentForm = kony.application.getCurrentForm();
 
-    }
-    
-    this.view.Flxsearch.onTouchStart = () => {
-      animationShowHide(this.view.SearchMenu,this.view.SearchMenu.isHided,'100%','0%')
-      this.view.SearchMenu.isHided = !this.view.SearchMenu.isHided
-      this.view.SearchMenu.isModalContainer = !this.view.SearchMenu.isHided 
+        let ntf = new kony.mvc.Navigation(this.view.SgmMenu.selectedRowItems[0].FormName);
+        ntf.navigate()
+        menu.isVisible = false;
+        kony.application.destroyForm(currentForm.id)
+      }
+      const menu = this.view.FlxMenu
+      this.view.FlxBreadMenu.onTouchStart = () => {
+        if (menu.isVisible === false) {
+          this.view.zIndex = 3
+          menu.isVisible = true
+        } else {
+          menu.isVisible = false;
+          this.view.zIndex = 1 
+        }
 
-    }
-    this.view.SearchMenu.onClickCancel = () => {
-      animationShowHide(this.view.SearchMenu,this.view.SearchMenu.isHided,'100%','0%')
-      this.view.SearchMenu.isHided = !this.view.SearchMenu.isHided
-            this.view.SearchMenu.isModalContainer = !this.view.SearchMenu.isHided 
+      }
+
+      this.view.Flxsearch.onTouchStart = () => {
+        animationShowHide(this.view.SearchMenu,this.view.SearchMenu.isHided,'100%','0%')
+        this.view.SearchMenu.isHided = !this.view.SearchMenu.isHided
+        this.view.SearchMenu.isModalContainer = !this.view.SearchMenu.isHided 
+        this.view.zIndex = this.view.SearchMenu.isHided ? 1 : 3
+
+      }
+      this.view.SearchMenu.onClickCancel = () => {
+        animationShowHide(this.view.SearchMenu,this.view.SearchMenu.isHided,'100%','0%')
+        this.view.SearchMenu.isHided = !this.view.SearchMenu.isHided
+        this.view.SearchMenu.isModalContainer = !this.view.SearchMenu.isHided 
+        this.view.zIndex = this.view.SearchMenu.isHided ? 1 : 3
+
+      } 
+    },
+    //Logic for getters/setters of custom properties
+    initGettersSetters: function() {
+      defineGetter(this, 'BackId', () => {
+        return this._BackId;
+      });
+      defineSetter(this, 'BackId', value => {
+        this._BackId = value;
+      });
 
     } 
-		},
-		//Logic for getters/setters of custom properties
-		initGettersSetters: function() {
-            defineGetter(this, 'BackId', () => {
-                return this._BackId;
-            });
-            defineSetter(this, 'BackId', value => {
-                this._BackId = value;
-            });
-        }
-	};
+  };
+
 });
 
-function MenuCLick(segment){
-  
-      let ntf = new kony.mvc.Navigation(segment.selectedRowItems[0].FormName);
-    ntf.navigate()
-}

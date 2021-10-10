@@ -6,16 +6,24 @@ function CallServiceProduct(callConfig,elements,type){
   const client = kony.sdk.getCurrentInstance(); 
 
   const service = client.getIntegrationService(serviceName);
-  const ErrorMaping = false
 
   service.invokeOperation(callConfig.operationName, callConfig.headers, callConfig.params,
-                          operationSuccess, operationFailure);
+                          operationSuccessProduct, operationFailure);
 
 
   //succes service call
-  function operationSuccess(res){
+  function operationSuccessProduct(res){
+        LastProductId = callConfig.headers.id
+
     MapDataProduct(res, elements)
-    LastProductId = callConfig.headers.id
+
+    elements.LblPage.text = `page ${callConfig.params.page} of ${totalPages}`
+    
+    if( elements.listPages.masterData !== calculateTotalPages(totalPages)){
+          elements.listPages.masterData = calculateTotalPages(totalPages)
+
+    }
+    elements.listPages.selectedKey = callConfig.params.page
 
   }
   //fail to call service 
@@ -30,11 +38,12 @@ function CallServiceProduct(callConfig,elements,type){
 
 //map Segment data in categorie
 function MapDataProduct(res,elements){ 
+  try{
 
   if(res.products.length > 0) {
     let MainImg = ''
     const arry = []
-
+totalPages = res.totalPages
     res.products.map((product,i) =>{  
       product.images.forEach((image) =>{
         if(image.primary === true){
@@ -64,9 +73,15 @@ function MapDataProduct(res,elements){
 
   }
   else{
-    backProduct(elements.backId)
     alert('Error, Cant display categories at this moment')
     elements.widget.setData([])
+        backProduct(elements.backId)
+
   }
   kony.application.dismissLoadingScreen(); 
+  }
+  catch(e){
+        alert('Error')
+
+  }
 } 

@@ -1,39 +1,43 @@
 //Type your code here
-function CallServiceCategorie(callConfig,dom,type){ 
+function CallServiceCategorie(callConfig,elements,type){ 
   let ResultList = [];
   if(kony.store.getItem(callConfig.params.id) !== null){
-    dom.widget.setData(kony.store.getItem(callConfig.params.id).subCategories)
+    elements.widget.setData(kony.store.getItem(callConfig.params.id).subCategories)
     CategorieDeep = kony.store.getItem(callConfig.params.id).path.length
     let pathValue = kony.store.getItem(callConfig.params.id).path.slice(1).map((path) =>{
       return path.name
     }) 
-          dom.lbl.text = 'home/' + pathValue.join('/') 
-    try{
+    const path = pathValue.length > 0 ? '->' + pathValue.join('->') : ''
+          elements.lbl.text = path ? 'Home' + path : 'Home'
+    try{ 
       const cached = kony.store.getItem(callConfig.params.id)
       const prevId = cached.path[cached.path.length - 2]
-      dom.backButton.backId = prevId.id
+      elements.backButton.backId = prevId.id
       if(CategorieDeep === 3){
         LastCall = cached.path[cached.path.length - 1].id
       }
     }
     catch{
-      dom.backButton.backId = 'cat00000'
+      elements.backButton.backId = 'cat00000'
       }
-      dom.backButton.isVisibleback = kony.store.getItem(callConfig.params.id).path.length > 1 ? true : false
+      elements.backButton.isVisibleback = kony.store.getItem(callConfig.params.id).path.length > 1 ? true : false
   }
   else{
+    try{
     kony.application.showLoadingScreen(null, null, constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, {});
 
     const serviceName = "BestBuyServiceKeyrol";
     const client = kony.sdk.getCurrentInstance();
 
     const service = client.getIntegrationService(serviceName);
-
+ 
 
     service.invokeOperation(callConfig.operationName, callConfig.headers, callConfig.params,
                             operationSuccess, operationFailure);
     kony.application.dismissLoadingScreen();
-
+}catch{
+  alert('Nothin to display')
+  }
   }
 
 
@@ -41,8 +45,8 @@ function CallServiceCategorie(callConfig,dom,type){
   function operationSuccess(res){
         try{
           const prevId = res.categories[0].path[res.categories[0].path.length - 2] 
-          dom.backButton.backId = prevId.id 
-           dom.backButton.isVisibleback = res.categories[0].path.length > 1 ? true : false
+          elements.backButton.backId = prevId.id 
+           elements.backButton.isVisibleback = res.categories[0].path.length > 1 ? true : false
           CategorieDeep = res.categories[0].path.length
            let pathValue = res.categories[0].path.slice(1) .map((path) =>{
       return path['name']
@@ -50,18 +54,18 @@ function CallServiceCategorie(callConfig,dom,type){
             if(CategorieDeep === 3){
         LastCall = res.categories[0].path[res.categories[0].path.length - 1].id
       }
-          dom.lbl.text = 'home/' + pathValue.join('/') 
+          elements.lbl.text = 'home/' + pathValue.join('/') 
         }
         catch{
-          dom.backButton.backId = 'cat00000'
+          elements.backButton.backId = 'cat00000'
           }
          
           if( kony.store.getItem(res.categories[0].id))
           {
-            dom.widget.setData(kony.store.getItem(res.categories[0].id))
+            elements.widget.setData(kony.store.getItem(res.categories[0].id))
           }
         else{
-          MapDataCategorie(res, dom.widget) 
+          MapDataCategorie(res, elements.widget) 
         }
        
     kony.application.dismissLoadingScreen();

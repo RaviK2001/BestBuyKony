@@ -11,7 +11,7 @@ define({
      this.view.ImgReview.src = `ratings_star_${Math.floor(+Product.LblReview.text)}.png`
      this.view.LblMore.onTouchStart = () => {
        ClickMoreImg(Product)}
-     this.view.BestBuyHeader.onClickBack = () => {backProduct()}
+     this.view.BestBuyHeader.onClickBack = () => {backProduct(0,'List')}
      this.view.SgmReviews.setData(Product.reviewList)
      this.view.LblReviewCount.text = Product.totalReviews
      this.view.BtnAddToCar.onClick = () => { 

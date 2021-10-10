@@ -1,10 +1,8 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
-    "_children_": [],
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -16,7 +14,7 @@
         0,
         0
     ],
-    "_orientation_": 1,
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
@@ -31,27 +29,32 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "75dp"
     },
+    "allboxes": [],
+    "autogrowmode": 1,
     "canUpdateUI": true,
-    "containerweight": 0,
-    "data": {
-        "isVisibleSearch": false,
-        "isVisibleback": false
-    },
-    "id": "BestBuyHeader",
+    "children": [
+        "ImgDelete"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "FlxImg",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b699081e36e34c96871661fca4bee55f",
-    "masterType": 1,
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "FlxMain",
-    "pf": "CartForm",
+    "kuid": "c6cd6bf1658c4495a304eabd8e104e8d",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "FlsMainCart",
+    "pf": "RowTemplateCarSgm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "fdb1849d0335461a8b17f859bbe3c8f5",
-    "wType": "UserWidgetInstance",
-    "zindex": 1
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
 }

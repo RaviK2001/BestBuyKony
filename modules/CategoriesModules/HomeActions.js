@@ -11,7 +11,7 @@ function OnClickCategorie(seguiWidget, sectionNumber, rowNumber, selectedState){
       elements,'categorie'
     )
   }	else{
-    var ntf = new kony.mvc.Navigation("FormProductList");
+    const ntf = new kony.mvc.Navigation("FormProductList");
     const context = {
       type: 'categorie', 
       id: seguiWidget.selectedRowItems[0].id,

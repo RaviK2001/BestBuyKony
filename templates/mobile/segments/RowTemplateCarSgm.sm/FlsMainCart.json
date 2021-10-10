@@ -37,7 +37,7 @@
     "children": [
         "LblName",
         "LblPrice",
-        "ImgDelete"
+        "FlxImg"
     ],
     "clipbounds": true,
     "containerId": true,
@@ -55,7 +55,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "dfbb03827ad34cb798fb9cd862868328",
-    "layouttype": 2,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "RowTemplateCarSgm",
     "pf": "RowTemplateCarSgm",

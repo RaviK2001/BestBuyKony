@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_db164ae1cddf4661a96c0290e228f882": {
+        "id": "AS_FlexContainer_db164ae1cddf4661a96c0290e228f882",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "RowTemplateCarSgm",
+            "type": "templates",
+            "platform": "",
+            "KUID": "ba3098e8739e4b9c9c0c341df45ea2ae"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ae86dedae3b848d8a4cb929373412228",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert('clicked')",
+            "parentId": null
+        }]
+    }
+}

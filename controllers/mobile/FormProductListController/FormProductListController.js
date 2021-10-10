@@ -1,40 +1,39 @@
 define({ 
   onNavigate : function(context){
-          elements = {widget: this.view.SgmProductList,lastId: 0 }
-     
-          this.view.SgmProductList.onRowClick = OnClickProduct
+    elements = {widget: this.view.SgmProductList,lastId: 0,LblPage: this.view.LblCurrentPage,listPages:this.view.ListBoxPage };
+    this.view.SgmProductList.onRowClick = OnClickProduct;
+    const ProductContext = kony.store.getItem('LastProductList');
+    elements.lastId = context ? context.LastId : ProductContext.LastId;
+    context ? kony.store.setItem('LastProductList', context) : null;
 
-    if( kony.store.getItem('LastProductList') && !context){
-      elements.lastId = kony.store.getItem('LastProductList').LastId
-      let ProductContext = kony.store.getItem('LastProductList')
-      this.view.LblResults.text = ProductContext.type + ' for: ' + ProductContext.name
-      CallServiceProduct(
-        {operationName:'GetProductList',params:{'id':ProductContext.id},headers:{}},
-        elements,'product'
-      )
-      this.view.BestBuyHeader.onClickBack = () => {backProduct(ProductContext.LastId)}
-    }
 
-    else{
-      elements.lastId = context.LastId
-       kony.store.setItem('LastProductList', context)
-      this.view.LblResults.text = context.type + ' for: ' + context.name
-      CallServiceProduct(
-        {operationName:'GetProductList',params:{'id':context.id},headers:{}},
-        elements,'product'
-      )
-      this.view.BestBuyHeader.onClickBack = () => {backProduct(context.LastId)}
-    }
-//    this.view.NothingToDisplay.isVisible = this.view.SgmProductList.data  ? false : true
+    CallServiceProduct(
+      {operationName:context ? context.type === 'categorie' ? 'GetProductList' : 'GetProductBySearch' : ProductContext.type === 'categorie' ? 'GetProductList' : 'GetProductBySearch',
+       params:{'id': context ? context.id : ProductContext.id,
+               'page' : 1,
+               'search': context ? context.type === 'search' ? context.search : null  : ProductContext.type === 'search' ? ProductContext.search : null
+              },
+       headers:{}},
+      elements,'product'
+    );
+
+    this.view.LblResults.text = context ? context.type + ' for: ' + context.name : ProductContext.type + ' for: ' + ProductContext.name;
+
+    this.view.BestBuyHeader.onClickBack = () => {backProduct(elements.LastId,'Home');};
+    this.view.ListBoxPage.masterData = calculateTotalPages();
+    this.view.ListBoxPage.onSelection = () => {
+      setPage(this.view.ListBoxPage.selectedKey, elements, context ? context : ProductContext);
+    };
     //Segment animation
     this.view.SgmProductList.setAnimations({
-    visible: {
+      visible: {
         definition: SegmentAnimationDefObject, 
         config: SegmentAnimationConfig,
         callbacks: null
-    }
-});
-    
+      }
+
+
+    });
 
   }
 

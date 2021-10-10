@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "335dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -43,7 +43,7 @@
     "isvisible": true,
     "kuid": "da3ced92ed564491b13509d7aa97f912",
     "name": "kony.ui.Image2",
-    "parent": "FlsMainCart",
+    "parent": "FlxImg",
     "pf": "RowTemplateCarSgm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

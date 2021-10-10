@@ -1,3 +1,4 @@
+let totalPages = 0
 function OnClickProduct(seguiWidget){
   if(seguiWidget.selectedRowItems[0]){
     CallServiceReviews(seguiWidget.selectedRowItems[0])
@@ -9,18 +10,24 @@ function OnClickProduct(seguiWidget){
 }
 
 
-function backProduct(id){
-  if(id){
-    let ntf = new kony.mvc.Navigation("HomeForm");
-    ntf.navigate(id);
-  }
+function backProduct(id,type,product){
+  switch(type){
+    case 'Home':
+      const ntfHome = new kony.mvc.Navigation("HomeForm");
+      ntfHome.navigate(id); 
+      break 
+      case 'List': 
+      const ntfList = new kony.mvc.Navigation("FormProductList");
+      ntfList.navigate();
+      break
+      case 'Detaills':
+      const ntfDetails = new kony.mvc.Navigation("ProductDetailsForm"); 
+      ntfDetails.navigate(product);
+      break
+  } 
 
-  else{
-    let ntf = new kony.mvc.Navigation("FormProductList");
-    ntf.navigate();
-  }
 
-}
+} 
 
 function ClickMoreImg(product) {
   let ntf = new kony.mvc.Navigation("ProductImgForm");
@@ -40,6 +47,22 @@ function SetImgs(imgArray){
   return ResultList 
 }
 
-function fetchReviews(segment){
+function setPage(number, element,context){
+  CallServiceProduct(
+    {operationName:context.type === 'categorie' ? 'GetProductList' : 'GetProductBySearch',
+       params:{'id': context.type === 'categorie' ? context.id : 0,
+               'page' : number,
+               'search': context.type === 'search' ? context.search : null  
+              },
+       headers:{}},
+      elements,'product')
+    
+}
 
+function calculateTotalPages(total){
+  const data = []
+  for(let i = 0; i < total; i++){
+    data.push([Math.floor(i + 1).toString(),Math.floor(i + 1).toString()])
+  }
+  return data
 }

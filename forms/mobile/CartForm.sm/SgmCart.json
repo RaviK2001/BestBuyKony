@@ -122,6 +122,7 @@
     "widgetalignment": 5,
     "widgetdatamap": {
         "FlsMainCart": "FlsMainCart",
+        "FlxImg": "FlxImg",
         "ImgDelete": "ImgDelete",
         "LblName": "LblName",
         "LblPrice": "LblPrice"

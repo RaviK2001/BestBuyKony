@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "10dp"
+        "value": "20dp"
     },
     "_margin_": [
         1,
@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "s33368f6c7804cf28ca1e2512ad8b669",
-    "_text_": "Description",
+    "_skin_": "sffd2c765540462ab00994563d175d26",
+    "_text_": "page",
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "40%"
     },
     "_wrapping_": 2,
     "android": {
@@ -35,9 +35,13 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "LblDescription",
+    "id": "LblCurrentPage",
     "info": null,
     "ipad": {
         "psp": {
@@ -51,10 +55,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c4e4b311783a4f6eb5cab40ff96f2b61",
+    "kuid": "d28d2eeea5f24dc6bfe67c6fedebcab1",
     "name": "kony.ui.Label",
-    "parent": "FlxDescription",
-    "pf": "ProductDetailsForm",
+    "parent": "FlxNavigation",
+    "pf": "FormProductList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

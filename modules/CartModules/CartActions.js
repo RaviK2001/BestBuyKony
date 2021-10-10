@@ -25,15 +25,17 @@ function addToCar(item){
       'src': 'cartremoveitem.png'
     }
   }
-  cart.push(item)
+  cart.push(FormatedItem)
   alert('Product added to cart')
+    alert(cart)
+
 
 }
 function calculateTotal(){
   let total = 0;
 
   cart.forEach(item => {
-    total = total + item.price
+    total = total + +item.LblPrice.text
   })
 
   return total
@@ -49,7 +51,7 @@ function isNew(){
     }
   })
 
-  return New
+  return New ? 'Shipping may be delayed' : 'Normal shipping schedule'
 }
 
 function isOnSale(){
@@ -62,5 +64,5 @@ function isOnSale(){
     }
   })
 
-  return onSale
+  return onSale ? 'skinOffer' : 'defLabel'
 }

@@ -1,0 +1,32 @@
+{
+    "AS_Image_j00f2911f9054703a4c9bd7f3e0892b7": {
+        "id": "AS_Image_j00f2911f9054703a4c9bd7f3e0892b7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "RowTemplateCarSgm",
+            "type": "templates",
+            "platform": "",
+            "KUID": "ba3098e8739e4b9c9c0c341df45ea2ae"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_h75f5792c06f4f33be284bc882cea7de",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert('hola')",
+            "parentId": null
+        }]
+    }
+}

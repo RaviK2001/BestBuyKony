@@ -48,7 +48,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone11",
+    "device": "iPhoneSE",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "ProductDetailsForm",
@@ -103,7 +103,7 @@
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "Pixel3",
+    "prevDevice": "iPhone11",
     "prevPlatform": "android",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

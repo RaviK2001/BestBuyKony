@@ -15,6 +15,11 @@
         0
     ],
     "_percent_": true,
+    "_pxMenuIndex": [
+        0,
+        1,
+        0
+    ],
     "_skin_": "s30ae72c72234aa3a28b39a44067ed7e",
     "_title_": null,
     "addWidgetsdone": false,
@@ -45,7 +50,7 @@
     },
     "device": "iPhone11",
     "displayorientation": 3,
-    "enabledforidletimeout": false,
+    "enabledforidletimeout": true,
     "id": "CartForm",
     "info": null,
     "initdone": false,
