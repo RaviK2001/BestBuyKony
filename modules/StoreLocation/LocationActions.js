@@ -6,8 +6,13 @@
 }  
 
 function AddPinsToMap(storeLocation,map){
- map.locationData =storeLocation
+try{
+   map.locationData =storeLocation
  map.fitToBounds(storeLocation)
   map.addPins(storeLocation)
+}
+  catch{
+    
+    }
      
 }

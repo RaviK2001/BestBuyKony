@@ -1,5 +1,18 @@
 //Type your code here
-const cart = []
+const cart = [];
+
+function mapCart(view){
+  cartEmpty(view.FlxBody,view.FlxNoItems);
+  if(view.FlxBody.isVisible){ 
+    view.SgmCart.setData(cart)
+    view.Lbltotal.text = `${calculateTotal()}`
+    view.Lbltotal.skin = isOnSale()
+    view.LblDelay.text = isNew()
+  }
+
+
+
+}
 
 function cartEmpty(flxBody,FlxNoItems) {
   if(cart.length > 0) { 
@@ -13,32 +26,38 @@ function cartEmpty(flxBody,FlxNoItems) {
 }
 
 function addToCar(item){
-  const FormatedItem = {
-    'LblName': {
-      'text':  item.LblProductName.text
-    },
-    'LblPrice': {
-      'text' : item.LblPrice.text,
-      'skin' : item.LblPrice.skin
-    },
-    'ImgDelete' : {
-      'src': 'cartremoveitem.png'
-    }
-  }
-  cart.push(FormatedItem)
-  alert('Product added to cart')
-    alert(cart)
+  item = {...item,BtnDeleteCar: {
+          'src': 'cartremoveitem.png',
+          'onClick': function(eventobject,context){
+          const row = {
+          sectionIndex: 0,
+          rowIndex: context.rowIndex
+         };
 
+  const currentForm = kony.application.getCurrentForm();
+try{
+    animateDeleteCartItem(row,currentForm);
+
+  CarPriceAnimation(currentForm );
+}catch(e){
+  alert(e);
+}
+
+}.bind(this)
+}
+};
+cart.push(item);
+alert('Product added to cart');
 
 }
 function calculateTotal(){
   let total = 0;
 
   cart.forEach(item => {
-    total = total + +item.LblPrice.text
-  })
+    total = total + Math.ceil(+item.LblPrice.text);
+  });
 
-  return total
+  return total;
 } 
 
 function isNew(){
@@ -47,22 +66,20 @@ function isNew(){
   cart.forEach(item => {
     if(item.new)
     {
-      New = true
+      New = true;
     }
-  })
-
-  return New ? 'Shipping may be delayed' : 'Normal shipping schedule'
+  });
+  return New ? 'Shipping may be delayed' : 'Normal shipping schedule';
 }
 
 function isOnSale(){
   let onSale = false;
 
   cart.forEach(item => {
-    if(item.onSale)
+    if(item.LblPrice.skin === 'skinOffer')
     {
-      onSale = true
+      onSale = true;
     }
-  })
-
-  return onSale ? 'skinOffer' : 'defLabel'
+  });
+  return onSale ? 'skinOffer' : 'SkinLbltotalPrice';
 }

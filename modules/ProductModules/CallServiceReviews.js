@@ -34,7 +34,7 @@ function MapDataReviews(res,data){
   if(res.reviews.length > 0) {
     const arrayReviewsMapped = []
     const total = res.total
-    res.reviews.map((review,i) =>{  
+    res.reviews.slice(0, 10).map((review,i) =>{  
       arrayReviewsMapped.push({
 
         'LbReviewTitle':{ 'text' : review.title  },

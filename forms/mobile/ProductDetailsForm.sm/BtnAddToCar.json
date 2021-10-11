@@ -50,6 +50,7 @@
     "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "texti18n": "AddToCar",
     "wType": "Button",
     "zindex": 1
 }

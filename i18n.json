@@ -1,8 +1,16 @@
 {
-    "keys": [],
+    "keys": [
+        "AddToCar",
+        "NoReviews",
+        "ReviewNumber"
+    ],
     "locales": {
         "de": {
-            "i18nStrings": {},
+            "i18nStrings": {
+                "AddToCar": "In den Warenkorb legen",
+                "NoReviews": "Keine Bewertungen",
+                "ReviewNumber": "Gesamtbewertung: "
+            },
             "isCustomLocale": false,
             "isSelected": true,
             "layoutConfig": {
@@ -12,7 +20,11 @@
             }
         },
         "en": {
-            "i18nStrings": {},
+            "i18nStrings": {
+                "AddToCar": "Add to cart",
+                "NoReviews": "No Reviews",
+                "ReviewNumber": "Total number of reviews: "
+            },
             "isCustomLocale": false,
             "isSelected": true,
             "layoutConfig": {
@@ -22,7 +34,11 @@
             }
         },
         "es": {
-            "i18nStrings": {},
+            "i18nStrings": {
+                "AddToCar": "Añadir al carrito",
+                "NoReviews": "No hay reseñas",
+                "ReviewNumber": "Numero total de reseñas: "
+            },
             "isCustomLocale": false,
             "isSelected": true,
             "layoutConfig": {

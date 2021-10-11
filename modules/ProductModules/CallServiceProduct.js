@@ -13,17 +13,24 @@ function CallServiceProduct(callConfig,elements,type){
 
   //succes service call
   function operationSuccessProduct(res){
-        LastProductId = callConfig.headers.id
+        LastProductId = callConfig.headers.id;
 
-    MapDataProduct(res, elements)
+    MapDataProduct(res, elements);
 
-    elements.LblPage.text = `page ${callConfig.params.page} of ${totalPages}`
+    elements.LblPage.text = `page ${callConfig.params.page} of ${totalPages}`;
     
-    if( elements.listPages.masterData !== calculateTotalPages(totalPages)){
-          elements.listPages.masterData = calculateTotalPages(totalPages)
+    if(totalPages === 1){
+      elements.listPages.isVisible = false;
+    }else{
+            elements.listPages.isVisible = true;
+
+       if( elements.listPages.masterData !== calculateTotalPages(totalPages)){
+          elements.listPages.masterData = calculateTotalPages(totalPages);
 
     }
-    elements.listPages.selectedKey = callConfig.params.page
+    elements.listPages.selectedKey = callConfig.params.page;
+       }
+    
 
   }
   //fail to call service 
@@ -31,6 +38,8 @@ function CallServiceProduct(callConfig,elements,type){
     kony.application.dismissLoadingScreen();
 
     alert('failure in call');
+    backProduct(elements.backId,'Home');
+
 
   }
 
@@ -41,15 +50,15 @@ function MapDataProduct(res,elements){
   try{
 
   if(res.products.length > 0) {
-    let MainImg = ''
-    const arry = []
-totalPages = res.totalPages
+    let MainImg = '';
+    const arry = [];
+totalPages = res.totalPages;
     res.products.map((product,i) =>{  
       product.images.forEach((image) =>{
         if(image.primary === true){
-          MainImg = image.href
+          MainImg = image.href;
         } 
-      })
+      });
       arry.push({
 
         'LblProductName':{ 'text' : product.name  },
@@ -60,28 +69,29 @@ totalPages = res.totalPages
           'isVisible' : product.freeShippingEligible,  
         },
         'LblReview':{
-          'text': product.customerReviewAverage
+          'text': product.customerReviewAverage ?  product.customerReviewAverage : 0
         },
         'shortDescription': product.shortDescription,
         'backId' : product.categoryPath[product.categoryPath.length - 1].id,
         'sku' : product.sku,
-        'images': product.images
+        'images': product.images,
+        'new': product.new 
 
-      })
-    }) 
-    elements.widget.setData(arry) 
+      });
+    }) ;
+    elements.widget.setData(arry) ;
 
   }
   else{
-    alert('Error, Cant display categories at this moment')
-    elements.widget.setData([])
-        backProduct(elements.backId)
+    alert('Error, Cant display categories at this moment');
+    elements.widget.setData([]);
+        backProduct(elements.backId,'Home');
 
   }
   kony.application.dismissLoadingScreen(); 
   }
   catch(e){
-        alert('Error')
-
+        alert('Error');
+backProduct(elements.backId,'Home');
   }
 } 

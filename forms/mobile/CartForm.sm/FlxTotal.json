@@ -29,27 +29,27 @@
     },
     "_width_": {
         "type": "string",
-        "value": "75dp"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "ImgDelete"
+        "LblTotalName",
+        "Lbltotal"
     ],
     "clipbounds": true,
-    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlxImg",
+    "id": "FlxTotal",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c6cd6bf1658c4495a304eabd8e104e8d",
-    "layouttype": 2,
+    "kuid": "af1ab4aebba94c13b75bbbabd1f76ef8",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "FlsMainCart",
-    "pf": "RowTemplateCarSgm",
+    "parent": "FlxBody",
+    "pf": "CartForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

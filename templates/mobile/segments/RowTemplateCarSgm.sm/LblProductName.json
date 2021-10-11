@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "35dp"
+        "value": "5dp"
     },
     "_margin_": [
         1,
@@ -21,15 +21,15 @@
         0,
         0
     ],
-    "_skin_": "s22622d611ff44d3878886ed95fa2816",
-    "_text_": "Hours:",
+    "_skin_": "s33368f6c7804cf28ca1e2512ad8b669",
+    "_text_": "Label",
     "_top_": {
         "type": "string",
-        "value": "3dp"
+        "value": "5dp"
     },
     "_width_": {
         "type": "string",
-        "value": "80%"
+        "value": "50%"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "LblHours",
+    "id": "LblProductName",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f52d0b6da450488cbfcfc9e9f03bd5ab",
+    "kuid": "add9f19ccff74cb981822ed6d733121e",
     "name": "kony.ui.Label",
-    "parent": "FlxHour",
-    "pf": "TemplateMap",
+    "parent": "FlsMainCart",
+    "pf": "RowTemplateCarSgm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

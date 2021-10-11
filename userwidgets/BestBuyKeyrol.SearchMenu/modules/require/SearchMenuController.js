@@ -12,7 +12,7 @@ define(function() {
           alert('Please write a search criteria');
         } 
         else{
-          var regex = /^[A-Za-z0-9 ]+$/;
+          const regex = /^(\w+ ?)*$/; 
           const searchText = txtBox.text.replace(/\s+/g, '%');
 
           let RegexValid =  regex.test(searchText);

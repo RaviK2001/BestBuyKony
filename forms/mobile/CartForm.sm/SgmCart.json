@@ -3,37 +3,37 @@
     "DNDConfig": null,
     "_data_": [
         {
-            "ImgDelete": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": ""
-            },
-            "LblName": {
+            "BtnDeleteCar": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": ""
             },
             "LblPrice": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": ""
+            },
+            "LblProductName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
             }
         },
         {
-            "ImgDelete": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": ""
-            },
-            "LblName": {
+            "BtnDeleteCar": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": ""
             },
             "LblPrice": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": ""
+            },
+            "LblProductName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
             }
         }
     ],
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "600px"
     },
     "_indicator_": "none",
     "_left_": {
@@ -61,7 +61,7 @@
         "type": "string",
         "value": "100%"
     },
-    "autogrowmode": 1,
+    "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
     "counter": "01",
@@ -121,11 +121,10 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "BtnDeleteCar": "BtnDeleteCar",
         "FlsMainCart": "FlsMainCart",
-        "FlxImg": "FlxImg",
-        "ImgDelete": "ImgDelete",
-        "LblName": "LblName",
-        "LblPrice": "LblPrice"
+        "LblPrice": "LblPrice",
+        "LblProductName": "LblProductName"
     },
     "zindex": 1
 }

@@ -28,8 +28,8 @@
         "value": "29dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "30%"
     },
     "_wrapping_": 2,
     "android": {

@@ -35,9 +35,9 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "LblName",
+        "LblProductName",
         "LblPrice",
-        "FlxImg"
+        "BtnDeleteCar"
     ],
     "clipbounds": true,
     "containerId": true,

@@ -19,21 +19,17 @@ define({
 
     this.view.LblResults.text = context ? context.type + ' for: ' + context.name : ProductContext.type + ' for: ' + ProductContext.name;
 
-    this.view.BestBuyHeader.onClickBack = () => {backProduct(elements.LastId,'Home');};
+    this.view.BestBuyHeader.onClickBack = () => {
+      backProduct(context ? context.LastId : ProductContext.LastId,'Home');};
+
     this.view.ListBoxPage.masterData = calculateTotalPages();
+
     this.view.ListBoxPage.onSelection = () => {
       setPage(this.view.ListBoxPage.selectedKey, elements, context ? context : ProductContext);
     };
     //Segment animation
-    this.view.SgmProductList.setAnimations({
-      visible: {
-        definition: SegmentAnimationDefObject, 
-        config: SegmentAnimationConfig,
-        callbacks: null
-      }
+    AnimateNormaSegment(  this.view.SgmProductList);
 
-
-    });
 
   }
 

@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5dp"
+        "value": "150dp"
     },
     "_margin_": [
         1,
@@ -21,15 +21,15 @@
         0,
         0
     ],
-    "_skin_": "s33368f6c7804cf28ca1e2512ad8b669",
-    "_text_": "Label",
+    "_skin_": "sce04b6e702545879ab64b337ee93b20",
+    "_text_": "Total:",
     "_top_": {
         "type": "string",
-        "value": "5dp"
+        "value": "50dp"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "18%"
     },
     "_wrapping_": 2,
     "android": {
@@ -39,10 +39,9 @@
         }
     },
     "canUpdateUI": true,
-    "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "LblName",
+    "id": "LblTotalName",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +55,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "add9f19ccff74cb981822ed6d733121e",
+    "kuid": "da9ee67e0d164500bb1b5ae6c6ed7c06",
     "name": "kony.ui.Label",
-    "parent": "FlsMainCart",
-    "pf": "RowTemplateCarSgm",
+    "parent": "FlxTotal",
+    "pf": "CartForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "textstyle": {},

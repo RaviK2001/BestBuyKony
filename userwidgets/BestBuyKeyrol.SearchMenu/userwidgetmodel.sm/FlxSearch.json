@@ -47,7 +47,7 @@
     "ismodalcontainer": false,
     "isvisible": true,
     "kuid": "ebabbe4c7ace46bfaeac0105c80f7935",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "SearchMenu",
     "pf": "userwidgetmodel",

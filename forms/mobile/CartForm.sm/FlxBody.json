@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "FlxSgm",
-        "Lbltotal",
+        "FlxTotal",
         "FlxDelay"
     ],
     "clipbounds": true,

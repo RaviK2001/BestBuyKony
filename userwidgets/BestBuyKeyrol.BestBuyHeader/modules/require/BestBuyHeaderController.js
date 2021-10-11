@@ -8,7 +8,10 @@ define(function() {
         let ntf = new kony.mvc.Navigation(this.view.SgmMenu.selectedRowItems[0].FormName);
         ntf.navigate()
         menu.isVisible = false;
-        kony.application.destroyForm(currentForm.id)
+        if( kony.application.getCurrentForm().id !== currentForm.id){
+                  kony.application.destroyForm(currentForm.id)
+
+        }
       }
       const menu = this.view.FlxMenu
       this.view.FlxBreadMenu.onTouchStart = () => {
