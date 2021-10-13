@@ -10,9 +10,15 @@ define({
     this.view.SgmCategories.onRowClick = OnClickCategorie;
 
     this.view.BestBuyHeader.onClickBack = () => {backCategorie(elements);};
-    AnimateNormaSegment(this.view.SgmCategories)
-  
-  
+    
+  const animation = AnimateNormaSegment()
+  this.view.SgmCategories.setAnimations({
+    visible: {
+        definition: animation.animationDef,
+        config: animation.config, 
+        callbacks: null
+    } 
+}); 
      
   
   },

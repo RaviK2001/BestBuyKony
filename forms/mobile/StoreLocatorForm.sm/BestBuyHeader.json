@@ -36,6 +36,7 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
+        "isVisibleSearch": false,
         "isVisibleback": false
     },
     "id": "BestBuyHeader",

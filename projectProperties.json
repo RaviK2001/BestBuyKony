@@ -655,6 +655,15 @@
     "protectedmodeenabled_android": "false",
     "protectedmodeenabled_androidwear": "false",
     "protectedmodeenabled_ios": "false",
+    "prototype": {
+        "PublishMode": "public",
+        "createdBy": "Keyrol Marcelino",
+        "createdById": "1bbd40db-467c-4669-b58d-70dd5ad14602",
+        "createdOn": "2021-10-11T02:53:44.567Z",
+        "password": "",
+        "resourceId": "dba621b8-94f8-4e11-92a7-4b8a91b96db3",
+        "shareGuid": "ZHRQD"
+    },
     "proximity": "false",
     "read_device_identifying_information": "false",
     "referenceWidth": "375",

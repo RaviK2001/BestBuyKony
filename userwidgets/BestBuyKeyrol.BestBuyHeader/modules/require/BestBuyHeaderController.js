@@ -9,20 +9,19 @@ define(function() {
         ntf.navigate()
         menu.isVisible = false;
         if( kony.application.getCurrentForm().id !== currentForm.id){
-                  kony.application.destroyForm(currentForm.id)
+          kony.application.destroyForm(currentForm.id)
 
         }
       }
+     
       const menu = this.view.FlxMenu
       this.view.FlxBreadMenu.onTouchStart = () => {
-        if (menu.isVisible === false) {
-          this.view.zIndex = 3
-          menu.isVisible = true
-        } else {
-          menu.isVisible = false;
-          this.view.zIndex = 1 
-        }
+        if (menu.left === '-87%') {
+          animationShowHideMenu(menu,this.view,'-87%','0%');
 
+        } else {
+          animationShowHideMenu(menu,this.view,'-87%','0%');
+        }
       }
 
       this.view.Flxsearch.onTouchStart = () => {

@@ -5,7 +5,7 @@ function mapCart(view){
   cartEmpty(view.FlxBody,view.FlxNoItems);
   if(view.FlxBody.isVisible){ 
     view.SgmCart.setData(cart)
-    view.Lbltotal.text = `${calculateTotal()}`
+    view.Lbltotal.text = `total: $${calculateTotal()}`
     view.Lbltotal.skin = isOnSale()
     view.LblDelay.text = isNew()
   }
@@ -46,7 +46,7 @@ try{
 }.bind(this)
 }
 };
-cart.push(item);
+cart.push(item); 
 alert('Product added to cart');
 
 }
@@ -54,10 +54,10 @@ function calculateTotal(){
   let total = 0;
 
   cart.forEach(item => {
-    total = total + Math.ceil(+item.LblPrice.text);
+    total = total + +item.price;
   });
 
-  return total;
+  return total.toFixed(2);
 } 
 
 function isNew(){

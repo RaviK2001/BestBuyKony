@@ -37,7 +37,8 @@
     "children": [
         "BestBuyHeader",
         "FlxBody",
-        "FlxReviews"
+        "FlxReviews",
+        "FlxReviewsCount"
     ],
     "clipbounds": true,
     "containerweight": 100,

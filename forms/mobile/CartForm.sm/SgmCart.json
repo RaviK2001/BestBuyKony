@@ -9,11 +9,11 @@
             },
             "LblPrice": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": "Label"
             },
             "LblProductName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "label"
             }
         },
         {
@@ -23,11 +23,11 @@
             },
             "LblPrice": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": "Label"
             },
             "LblProductName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "label"
             }
         }
     ],

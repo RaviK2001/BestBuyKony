@@ -63,20 +63,22 @@ totalPages = res.totalPages;
 
         'LblProductName':{ 'text' : product.name  },
         'id': product.id ,
-        'LblPrice': {'text' : product.salePrice, 'skin' :product.onSale ? 'skinOffer' : 'SkinNormalText' },
+        'LblPrice': {'text' : 
+                    '$'+ product.salePrice, 'skin' :product.onSale ? 'skinOffer' : 'SkinNormalText' },
         'ImgProduct' : {'src' : MainImg},
         'LblFreeShipping':{
           'isVisible' : product.freeShippingEligible,  
         },
         'LblReview':{
-          'text': product.customerReviewAverage ?  product.customerReviewAverage : 0
+          'text': product.customerReviewAverage ? product.customerReviewAverage : ''
         },
         'shortDescription': product.shortDescription,
         'backId' : product.categoryPath[product.categoryPath.length - 1].id,
-        'sku' : product.sku,
+        'sku' : product.sku , 
         'images': product.images,
-        'new': product.new 
-
+        'new': product.new ? product.new : false,
+		'onSale': product.onSale,
+        'price': product.salePrice
       });
     }) ;
     elements.widget.setData(arry) ;

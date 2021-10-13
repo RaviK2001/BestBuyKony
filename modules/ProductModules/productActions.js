@@ -1,28 +1,37 @@
 let totalPages = 0;
 function OnClickProduct(seguiWidget){
+  let data;
   if(seguiWidget.selectedRowItems[0]){
-    CallServiceReviews(seguiWidget.selectedRowItems[0]);
+    data = seguiWidget.selectedRowItems[0]
   }
   else{
-    CallServiceReviews(seguiWidget);
+    data = seguiWidget
+  }
+  
+  if(data.LblReview.text){
 
+    CallServiceReviews(data);
+  }
+  else{
+     let ntf = new kony.mvc.Navigation("ProductDetailsForm");
+    ntf.navigate(data)
   }
 }
 
 
 function backProduct(id,type,product){
   const currentForm = kony.application.getCurrentForm();
-	let nft;
+  let nft;
   switch(type){
     case 'Home': 
       nft = new kony.mvc.Navigation("HomeForm");
       nft.navigate(id); 
       break;
-      case 'List': 
+    case 'List': 
       nft = new kony.mvc.Navigation("FormProductList");
       nft.navigate();
       break;
-      case 'Detaills':
+    case 'Detaills':
       nft = new kony.mvc.Navigation("ProductDetailsForm"); 
       nft.navigate(product);
       break;

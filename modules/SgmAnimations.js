@@ -1,9 +1,9 @@
 //Type your code here
-function AnimateNormaSegment(widget){
+function AnimateNormaSegment(){
   let transformObject = kony.ui.makeAffineTransform();
   let transformProp2 = kony.ui.makeAffineTransform();
   transformProp2.translate(200, 0);
-  transformObject.translate(0,-100);
+  transformObject.translate(0,0);
   animationDef = {
     "0": {
       "transform": transformProp2 
@@ -22,29 +22,26 @@ function AnimateNormaSegment(widget){
   SegmentAnimationDefObject = kony.ui.createAnimation(
     animationDef
   );
-  widget.setAnimations({
-    visible: {
-      definition: SegmentAnimationDefObject,
-      config: SegmentAnimationConfig,  
-      callbacks: null
-    } 
-  }); 
+  
+  return {
+    animationDef: SegmentAnimationDefObject,
+    config: SegmentAnimationConfig
+  }
 }
 
 function animateDeleteCartItem(row,currentForm){
 
 
-    let transformObject = kony.ui.makeAffineTransform();
-    let transformObject2 = kony.ui.makeAffineTransform();
+    let transformObject3 = kony.ui.makeAffineTransform();
+    let transformObject4 = kony.ui.makeAffineTransform();
 
-    transformObject.translate(1000,0);
-    transformObject2.scale(1,0);
-    transformObject2.translate(1000,0);
+    transformObject3.translate(1000,0);
+    transformObject4.scale(1,0);
+    transformObject4.translate(1000,0);
 
   let animationObject = kony.ui.createAnimation({
     "50": {
-            "transform": transformObject,
-//       "left": "100%",
+            "left": '100%',
 
       //             "stepConfig": {
       //                 "timingFunction": kony.anim.LINEAR
@@ -52,7 +49,7 @@ function animateDeleteCartItem(row,currentForm){
     },
     "100": {
 //       'height' : '0.1%'
-            "transform": transformObject2,
+//             "transform": transformObject4,
 
 
     }
@@ -75,7 +72,7 @@ function animateDeleteCartItem(row,currentForm){
   };
   currentForm.SgmCart.animateRows({
     rows: [row],
-    widgets: [],
+    widgets: ['FlsMainCart'],
     animation: animationDefObject
   });
 }

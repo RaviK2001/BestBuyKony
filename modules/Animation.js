@@ -16,6 +16,31 @@ function animationShowHide(widget,status,hide,show){
   widget.animate(animationDefObject, animationConfig, null);    
 }
 
+function animationShowHideMenu(widget,view,hide,show){
+  animationDef = { 
+    "100": {
+      "left": widget.left === '-87%' ? show : hide  
+    } 
+  };
+
+  animationConfig = {
+    duration: 0.5,
+    fillMode: kony.anim.FILL_MODE_FORWARDS
+  };
+  animationDefObject = kony.ui.createAnimation(
+    animationDef
+  );
+  widget.animate(animationDefObject, animationConfig, {
+    animationStart:()=>{
+      view.zIndex = 3; 
+    },
+    animationEnd:()=>{
+   view.zIndex = widget.left === '-87%' ? 1 : 3
+   view.FlxBody.isModalContainer = widget.left ===  '-87%' ? false : true
+
+    }});    
+}
+
 function CarPriceAnimation(currentForm){
   let transformObject = kony.ui.makeAffineTransform();
   let transformObject2 = kony.ui.makeAffineTransform();

@@ -185,7 +185,7 @@
     ],
     "_height_": {
         "type": "string",
-        "value": "175dp"
+        "value": "150dp"
     },
     "_indicator_": "none",
     "_left_": {
@@ -205,12 +205,20 @@
         0,
         0
     ],
+    "_top_": {
+        "type": "number",
+        "value": "-10"
+    },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "90%"
     },
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "counter": "09",
     "focusedindex": null,
@@ -249,7 +257,7 @@
     "rowTemplateId": "cab107f95b4c4da5af3484dae7d9ed93",
     "rowcounter": 9,
     "rowfocusskin": "sbdf8792aff347e3a582dd12455ceaf3",
-    "rowskin": "se351ed9dd0b4fd9a30b51c8c946cee4",
+    "rowskin": "sa66349742dd4298b7a22aaa4b3a8ecc",
     "rowtemplate": "Flex0f41de8ab2f5d43",
     "screenlevelwidget": false,
     "seccounter": 0,
@@ -268,7 +276,7 @@
     "showscrollbars": false,
     "swipeContext": {
         "currentPage": 0,
-        "imageWidth": 828,
+        "imageWidth": 966,
         "widthRatio": 0
     },
     "viewtype": "pageview",

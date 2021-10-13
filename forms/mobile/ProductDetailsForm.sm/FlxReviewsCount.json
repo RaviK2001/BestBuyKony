@@ -25,7 +25,7 @@
     "_skin_": "sfd3918f00ba45dcafaf6e61f4297739",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "60%"
     },
     "_width_": {
         "type": "string",
@@ -44,10 +44,10 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "j0e345d2e2b24a93b386f873f23b04ff",
+    "kuid": "a561515ab0c3405daa54b499a1b6f4e7",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "FlxBody",
+    "parent": "FlxMain",
     "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

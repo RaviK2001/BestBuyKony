@@ -38,7 +38,7 @@ function MapDataReviews(res,data){
       arrayReviewsMapped.push({
 
         'LbReviewTitle':{ 'text' : review.title  },
-        'LblReviewAutor': {'text' : review.reviewer[0].name},
+        'LblReviewAutor': {'text' :'Submitted by: '+ review.reviewer[0].name},
         'ImgReview' : {'src' : `ratings_star_${Math.floor(+review.rating)}.png`},
         'LblReview':{'text' : review.comment}
 

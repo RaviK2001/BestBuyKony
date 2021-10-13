@@ -17,8 +17,11 @@ define({
       elements,'product'
     );
 
-    this.view.LblResults.text = context ? context.type + ' for: ' + context.name : ProductContext.type + ' for: ' + ProductContext.name;
-
+    this.view.LblResults.text = context ? context.type ==='search' ? 'Results for: ' + context.name 
+    : 'Category: ' + context.name 
+    : ProductContext.type ==='search' ? 'Results for: ' + ProductContext.name 
+    : 'Category: ' + ProductContext.name
+ 
     this.view.BestBuyHeader.onClickBack = () => {
       backProduct(context ? context.LastId : ProductContext.LastId,'Home');};
 
@@ -28,8 +31,14 @@ define({
       setPage(this.view.ListBoxPage.selectedKey, elements, context ? context : ProductContext);
     };
     //Segment animation
-    AnimateNormaSegment(  this.view.SgmProductList);
-
+    const animation = AnimateNormaSegment()
+    this.view.SgmProductList.setAnimations({
+      visible: {
+        definition: animation.animationDef,
+        config: animation.config, 
+        callbacks: null
+      } 
+    }); 
 
   }
 
