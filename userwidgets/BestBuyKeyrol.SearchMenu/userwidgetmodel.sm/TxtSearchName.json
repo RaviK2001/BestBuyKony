@@ -3,11 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "40dp"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "12dp"
+        "value": "100%"
     },
     "_margin_": [
         0,
@@ -24,13 +20,9 @@
     "_placeholder_": "Search",
     "_skin_": "s5e9a68f066e4996a92fdfd5cebb0163",
     "_text_": "",
-    "_top_": {
-        "type": "string",
-        "value": "21dp"
-    },
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "100%"
     },
     "android": {
         "psp": {
@@ -55,15 +47,15 @@
     "kuid": "ad088e6a7f0641ea95db44a824c2250d",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "parent": "FlxNav",
+    "parent": "FlxInput",
     "pf": "userwidgetmodel",
-    "placeholderskin": "sc2442758c0c47b48321bbf78e9e9633",
+    "placeholderskin": "s5e9a68f066e4996a92fdfd5cebb0163",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "securetextentry": false,
     "textinputmode": "A",
     "tooltip": "",
-    "viewtype": "default",
+    "viewtype": "search",
     "wType": "TextField",
     "zindex": 3
 }

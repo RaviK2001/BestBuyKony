@@ -67,7 +67,7 @@ function setPage(number, element,context){
              'search': context.type === 'search' ? context.search : null  
             },
      headers:{}},
-    elements,'product');
+    elements,'product',context.filter); 
 
 }
 

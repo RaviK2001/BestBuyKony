@@ -14,19 +14,19 @@ define({
                'search': context ? context.type === 'search' ? context.search : null  : ProductContext.type === 'search' ? ProductContext.search : null
               },
        headers:{}},
-      elements,'product'
+      elements,'product',context.filter
     );
 
     this.view.LblResults.text = context ? context.type ==='search' ? 'Results for: ' + context.name 
     : 'Category: ' + context.name 
     : ProductContext.type ==='search' ? 'Results for: ' + ProductContext.name 
     : 'Category: ' + ProductContext.name
- 
+
     this.view.BestBuyHeader.onClickBack = () => {
       backProduct(context ? context.LastId : ProductContext.LastId,'Home');};
 
     this.view.ListBoxPage.masterData = calculateTotalPages();
-
+    this.view.ListBoxPage.selectedKey = 1
     this.view.ListBoxPage.onSelection = () => {
       setPage(this.view.ListBoxPage.selectedKey, elements, context ? context : ProductContext);
     };

@@ -1,5 +1,5 @@
 //Type your code here
-function animationShowHide(widget,status,hide,show){
+async function animationShowHide(widget,status,hide,show){ 
   animationDef = {
     "100": {
       "top": status === true ? show : hide  

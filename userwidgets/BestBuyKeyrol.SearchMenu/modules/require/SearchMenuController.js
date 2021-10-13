@@ -25,7 +25,8 @@ define(function() {
               id: 0,
               LastId: 0,
               name: txtBox.text,
-              search: txtBox.text + filter
+              search: txtBox.text + filter,
+              filter: filter
             };
             const ntf = new kony.mvc.Navigation("FormProductList");
             ntf.navigate(context);
@@ -45,6 +46,7 @@ define(function() {
       defineSetter(this, 'isHided', value => {
         this._isHided = value;
       });
+      
     }
   };
 });

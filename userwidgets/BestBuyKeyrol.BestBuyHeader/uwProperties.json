@@ -6,12 +6,26 @@
             "passthrough": []
         },
         "events": {
-            "custom": [],
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bcd0e7d6efea41b3a69e8f9b94215a72",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "HideSearch",
+                    "pw": {
+                        "displayName": "HideSearch",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdb1849d0335461a8b17f859bbe3c8f5",
+                    "type": "event"
+                }
+            ],
             "passthrough": [
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "e098275a20784f92bdac109685f8274b",
+                    "kuid": "d019c93b40ec4592a233b7ac45c68d79",
                     "originalPropertyKey": "onClick",
                     "propertyIndex": 1,
                     "propertyKey": "onClickBack",
@@ -97,6 +111,99 @@
                         "wType": "FlexContainer"
                     },
                     "srcWgtKUID": "a3c17c9f53fe4eab8acbafb03a33f211"
+                },
+                {
+                    "access": "Enable",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "e7db8841c2fa464c80f22685e8528b3f",
+                    "originalPropertyKey": "isHided",
+                    "propertyIndex": 4,
+                    "propertyKey": "isHided",
+                    "pw": {
+                        "access": "readwrite",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "isHidedMenu",
+                        "isHiddenInTool": false,
+                        "srcWidget": "SearchMenu",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "j5c8c74bdbd247ecb10ad05c208ff1b5",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ja3ff7dc0fa447be8348f6a2d1259dfc",
+                    "originalPropertyKey": "top1",
+                    "propertyIndex": 5,
+                    "propertyKey": "top1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "TopSearch",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "isHiddenInTool": false,
+                        "srcWidget": "SearchMenu",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "j5c8c74bdbd247ecb10ad05c208ff1b5"
                 }
             ]
         },

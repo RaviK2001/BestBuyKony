@@ -59,10 +59,71 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "df4e376f849a49aeb51edac521f280e9",
+                    "kuid": "gf393de5d0a24fa18ab55e3d94bf0d98",
+                    "originalPropertyKey": "isModalContainer",
+                    "propertyIndex": 3,
+                    "propertyKey": "isModalContainer",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Modal Container",
+                        "isHiddenInTool": false,
+                        "srcWidget": "FlxSearch",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ebabbe4c7ace46bfaeac0105c80f7935"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e627a8141b3b4556a9dad20f252a9112",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 4,
+                    "propertyKey": "skin1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "TxtSearchName",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "ad088e6a7f0641ea95db44a824c2250d"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ef0eb34dcfd64f6893fabcb907ef0b86",
+                    "originalPropertyKey": "accessibilityConfig",
+                    "propertyIndex": 5,
+                    "propertyKey": "accessibilityConfig",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Accessibility Config",
+                        "isHiddenInTool": false,
+                        "srcWidget": "FlxSearch",
+                        "type": "object",
+                        "uiRepresentation": "AccessibilityConfig",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ebabbe4c7ace46bfaeac0105c80f7935"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ff106f1c2b3b4698933655efe2adadf1",
                     "originalPropertyKey": "top",
-                    "propertyIndex": 1,
-                    "propertyKey": "TopSearch",
+                    "propertyIndex": 6,
+                    "propertyKey": "top1",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
@@ -126,27 +187,6 @@
                         "wType": "FlexContainer"
                     },
                     "srcWgtKUID": "b51680b1ca284d70bc2df643c0feab64"
-                },
-                {
-                    "access": "Enable",
-                    "group": "General",
-                    "kuid": "gf393de5d0a24fa18ab55e3d94bf0d98",
-                    "originalPropertyKey": "isModalContainer",
-                    "propertyIndex": 3,
-                    "propertyKey": "isModalContainer",
-                    "pw": {
-                        "access": "readwrite",
-                        "category": "widget",
-                        "dependencyConditions": {},
-                        "dependentKeysKUIDs": null,
-                        "displayName": "Modal Container",
-                        "isHiddenInTool": false,
-                        "srcWidget": "FlxSearch",
-                        "type": "boolean",
-                        "uiRepresentation": "Label-Radiobuttongroup",
-                        "wType": "FlexContainer"
-                    },
-                    "srcWgtKUID": "ebabbe4c7ace46bfaeac0105c80f7935"
                 }
             ]
         },

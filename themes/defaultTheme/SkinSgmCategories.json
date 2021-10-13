@@ -17,6 +17,10 @@
     },
     "background_style": "linear",
     "bg_type": "ms_gradient",
+    "border_color": "00000000",
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 1,
     "font_name": "default",
     "isForked": true
   },
@@ -38,6 +42,10 @@
     },
     "background_style": "linear",
     "bg_type": "ms_gradient",
+    "border_color": "00000000",
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 1,
     "font_name": "default",
     "isForked": true
   },
@@ -98,6 +106,10 @@
     },
     "background_style": "linear",
     "bg_type": "ms_gradient",
+    "border_color": "00000000",
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 1,
     "font_name": "System",
     "isForked": true
   },
@@ -119,6 +131,10 @@
     },
     "background_style": "linear",
     "bg_type": "ms_gradient",
+    "border_color": "00000000",
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 1,
     "font_name": "System",
     "isForked": true
   },
@@ -141,6 +157,10 @@
     },
     "background_style": "linear",
     "bg_type": "ms_gradient",
+    "border_color": "00000000",
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 1,
     "font_name": "None",
     "isForked": true
   },
@@ -361,6 +381,10 @@
     },
     "background_style": "linear",
     "bg_type": "ms_gradient",
+    "border_color": "00000000",
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 1,
     "font_name": "default",
     "isForked": true
   },
@@ -386,6 +410,10 @@
     },
     "background_style": "linear",
     "bg_type": "ms_gradient",
+    "border_color": "00000000",
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 1,
     "font_name": "None",
     "isForked": true
   },
@@ -407,6 +435,10 @@
     },
     "background_style": "linear",
     "bg_type": "ms_gradient",
+    "border_color": "00000000",
+    "border_style": "plain",
+    "border_type": 0,
+    "border_width": 1,
     "font_name": "None",
     "isForked": true
   }
