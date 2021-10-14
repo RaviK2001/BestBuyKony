@@ -30,15 +30,15 @@
     </service-input>
     <service-output passthrough="false" isExtended="false">
         <dataset defaultvalue="" id="categories" order="" paramOrder="1" parentOrder="0" src="$.categories[*]" testvalue="" isExtended="false">
-            <dataset defaultvalue="" id="path" order="" paramOrder="2" parentOrder="1" src="path[*]" testvalue="" isExtended="false">
-                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="3" parentOrder="2" passnull="false" sms-name="" src="name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <dataset defaultvalue="" id="subCategories" order="" paramOrder="5" parentOrder="1" src="subCategories[*]" testvalue="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="6" parentOrder="5" passnull="false" sms-name="" src="name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
                     <accessType></accessType>
                 </param>
-                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="4" parentOrder="2" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="7" parentOrder="5" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
                     <accessType></accessType>
                 </param>
             </dataset>
-            <dataset defaultvalue="" id="subCategories" order="" paramOrder="8" parentOrder="1" src="subCategories[*]" testvalue="" isExtended="false">
+            <dataset defaultvalue="" id="path" order="" paramOrder="8" parentOrder="1" src="path[*]" testvalue="" isExtended="false">
                 <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="9" parentOrder="8" passnull="false" sms-name="" src="name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
                     <accessType></accessType>
                 </param>
@@ -46,13 +46,16 @@
                     <accessType></accessType>
                 </param>
             </dataset>
-            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="5" parentOrder="1" passnull="false" sms-name="" src="name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="2" parentOrder="1" passnull="false" sms-name="" src="name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
                 <accessType></accessType>
             </param>
-            <param datatype="boolean" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="active" order="" paramOrder="6" parentOrder="1" passnull="false" sms-name="" src="active" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <param datatype="boolean" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="active" order="" paramOrder="3" parentOrder="1" passnull="false" sms-name="" src="active" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
                 <accessType></accessType>
             </param>
-            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="7" parentOrder="1" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="url" order="" paramOrder="11" parentOrder="1" passnull="false" sms-name="" src="url" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
                 <accessType></accessType>
             </param>
         </dataset>

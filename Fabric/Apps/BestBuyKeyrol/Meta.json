@@ -5,7 +5,7 @@
   "intSvcs" : [ {
     "name" : "BestBuyServiceKeyrol",
     "version" : "1.0",
-    "etag" : "1cf4d6e4-0c44-467a-8e4a-04d8b0d22cda"
+    "etag" : "e4a23afe-f25e-400e-becb-b0efe86cea75"
   } ],
   "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
 }

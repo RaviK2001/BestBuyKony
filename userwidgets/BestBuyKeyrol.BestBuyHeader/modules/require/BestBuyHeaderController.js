@@ -8,7 +8,7 @@ define(function() {
         const currentForm = kony.application.getCurrentForm();
 
         let ntf = new kony.mvc.Navigation(this.view.SgmMenu.selectedRowItems[0].FormName);
-        if(this.view.SgmMenu.selectedRowItems[0].FormName === 'HomeForm'){
+        if(this.view.SgmMenu.selectedRowItems[0].FormName === 'HomeForm' && kony.application.getCurrentForm().id !== currentForm.id){
           kony.application.destroyForm('HomeForm')
         }
         if(this.view.SgmMenu.selectedRowItems[0].FormName !==currentForm.id){
