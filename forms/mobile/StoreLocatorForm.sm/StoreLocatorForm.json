@@ -48,7 +48,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone11",
+    "device": "Pixel3",
     "displayorientation": 3,
     "enabledforidletimeout": false,
     "id": "StoreLocatorForm",
@@ -102,8 +102,8 @@
     "name": "kony.ui.Form2",
     "needappmenu": false,
     "paddinginpixel": false,
-    "platform": "iphone",
-    "prevDevice": "iPhoneSE",
+    "platform": "android",
+    "prevDevice": "iPhone11",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

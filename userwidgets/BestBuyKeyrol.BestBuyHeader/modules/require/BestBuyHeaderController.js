@@ -2,6 +2,8 @@ define(function() {
 
   return {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
+      const menu = this.view.FlxMenu
+
       this.view.SgmMenu.onRowClick = () => {
         const currentForm = kony.application.getCurrentForm();
 
@@ -12,14 +14,14 @@ define(function() {
         if(this.view.SgmMenu.selectedRowItems[0].FormName !==currentForm.id){
           ntf.navigate()
         }
-        menu.isVisible = false;
+        animationShowHideMenu(menu,this.view,'-87%','0%');
+
         if( kony.application.getCurrentForm().id !== currentForm.id){
           kony.application.destroyForm(currentForm.id)
 
         } 
       }
 
-      const menu = this.view.FlxMenu
       this.view.FlxBreadMenu.onTouchStart = () => {
         if (menu.left === '-87%') {
           animationShowHideMenu(menu,this.view,'-87%','0%');

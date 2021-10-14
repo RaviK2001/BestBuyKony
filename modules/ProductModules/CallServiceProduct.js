@@ -21,7 +21,14 @@ function CallServiceProduct(callConfig,elements,type,filter){
 
     if(totalPages === 1){
       elements.listPages.isVisible = false;
-    }else{
+    }else if(totalPages === 0){
+      elements.listPages.isVisible = false;
+
+      elements.LblPage.isVisible = false;
+    }
+    else{
+      elements.LblPage.isVisible = true;
+
       elements.listPages.isVisible = true;
 
       if( elements.listPages.masterData !== calculateTotalPages(totalPages)){
@@ -87,7 +94,7 @@ function MapDataProduct(res,elements,filter){
       if(filter === '&freeShipping=false'){
         const result =  arry.filter(a => a.LblFreeShipping.isVisible === false);
         elements.widget.setData(result) ; 
-  
+
       }
       else{
         elements.widget.setData(arry) ;

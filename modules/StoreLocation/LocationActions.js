@@ -8,7 +8,7 @@ function FindLocation(text,map){
         {operationName:'GetStores',params:{'store':text},headers:{}},map
       )
     }
-	else{
+    else{
       alert('Please write a valid city name')
     }
   }
@@ -19,12 +19,14 @@ function FindLocation(text,map){
 
 function AddPinsToMap(storeLocation,map){
   try{
-    map.locationData =storeLocation
-    map.fitToBounds(storeLocation)
     map.addPins(storeLocation)
-  }
-  catch{
 
+    map.locationData = [{lat:storeLocation[0].lat,lon:storeLocation[0].lon,
+                         name: storeLocation[0].name, desc: storeLocation[0].desc,navigateAndZoom:true}]
+    //     map.fitToBounds(storeLocation)
+  }
+  catch(e){
+alert(e)
     }
 
     }

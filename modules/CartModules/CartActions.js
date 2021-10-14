@@ -5,7 +5,7 @@ function mapCart(view){
   cartEmpty(view.FlxBody,view.FlxNoItems);
   if(view.FlxBody.isVisible){ 
     view.SgmCart.setData(cart)
-    view.Lbltotal.text = `total: $${calculateTotal()}`
+    view.Lbltotal.text = `$ ${calculateTotal()}`
     view.Lbltotal.skin = isOnSale()
     view.LblDelay.text = isNew()
   }

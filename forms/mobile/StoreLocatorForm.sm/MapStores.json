@@ -33,7 +33,8 @@
     "android": {
         "psp": {
             "showZoomControl": true
-        }
+        },
+        "zoomLevel": "15"
     },
     "calloutTemplateId": "b8ac4db8f2d04bdbb8ae3b43b303a9dc",
     "calloutwidth": 80,
@@ -43,6 +44,12 @@
     "id": "MapStores",
     "info": null,
     "invokedProperty": "maps",
+    "iphone": {
+        "psp": {
+            "showCurrentLocation": "none"
+        },
+        "zoomLevel": "22"
+    },
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "h4184dd0c0344e72b87515108be719e0",
@@ -56,7 +63,8 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "screenlevelwidget": false,
+    "showCurrentLocation": "none",
     "wType": "Map",
     "zindex": 1,
-    "zoomlevel": 20
+    "zoomlevel": "20"
 }
