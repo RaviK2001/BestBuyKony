@@ -22,7 +22,7 @@ function AnimateNormaSegment(){
   SegmentAnimationDefObject = kony.ui.createAnimation(
     animationDef
   );
-  
+
   return {
     animationDef: SegmentAnimationDefObject,
     config: SegmentAnimationConfig
@@ -32,24 +32,26 @@ function AnimateNormaSegment(){
 function animateDeleteCartItem(row,currentForm){
 
 
-    let transformObject3 = kony.ui.makeAffineTransform();
-    let transformObject4 = kony.ui.makeAffineTransform();
+  let transformObject3 = kony.ui.makeAffineTransform();
+  let transformObject4 = kony.ui.makeAffineTransform();
 
-    transformObject3.translate(1000,0);
-    transformObject4.scale(1,0);
-    transformObject4.translate(1000,0);
+  transformObject3.translate(1000,0);
+  transformObject4.scale(1,0);
+  transformObject4.translate(1000,0);
 
   let animationObject = kony.ui.createAnimation({
     "50": {
-            "left": '100%',
+      "left": '100%',
+      "transform": transformObject3,
+
 
       //             "stepConfig": {
       //                 "timingFunction": kony.anim.LINEAR
       //             }
     },
     "100": {
-//       'height' : '0.1%'
-//             "transform": transformObject4,
+      //       'height' : '0.1%'
+      //             "transform": transformObject4,
 
 
     }

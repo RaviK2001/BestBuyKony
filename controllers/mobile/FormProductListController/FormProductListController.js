@@ -14,7 +14,7 @@ define({
                'search': context ? context.type === 'search' ? context.search : null  : ProductContext.type === 'search' ? ProductContext.search : null
               },
        headers:{}},
-      elements,'product',context.filter
+      elements,'product',context ? context.filter : ProductContext.filter
     );
 
     this.view.LblResults.text = context ? context.type ==='search' ? 'Results for: ' + context.name 
