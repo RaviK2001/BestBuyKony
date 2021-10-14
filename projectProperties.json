@@ -650,7 +650,7 @@
     "previewshowpassword": "false",
     "privateNetworkClientServer": "false",
     "project.type": "js",
-    "projectCloudGuid": "c0fbcce7-fad1-4735-aeb0-29f443f66a0c",
+    "projectCloudGuid": "0012d4e2-ca55-4c27-a2f7-783bb8df006e",
     "project_version": "sprint39",
     "protectedmodeenabled_android": "false",
     "protectedmodeenabled_androidwear": "false",
@@ -659,10 +659,10 @@
         "PublishMode": "public",
         "createdBy": "Keyrol Marcelino",
         "createdById": "1bbd40db-467c-4669-b58d-70dd5ad14602",
-        "createdOn": "2021-10-11T02:53:44.567Z",
+        "createdOn": "2021-10-14T10:31:39.943Z",
         "password": "",
-        "resourceId": "dba621b8-94f8-4e11-92a7-4b8a91b96db3",
-        "shareGuid": "ZHRQD"
+        "resourceId": "22468058-32d0-44ac-bb58-46f405008ecc",
+        "shareGuid": "UJ7PI"
     },
     "proximity": "false",
     "read_device_identifying_information": "false",
