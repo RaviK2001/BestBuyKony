@@ -114,33 +114,11 @@
                 },
                 {
                     "access": "Enable",
-                    "defaultValue": true,
-                    "group": "General",
-                    "kuid": "e7db8841c2fa464c80f22685e8528b3f",
-                    "originalPropertyKey": "isHided",
-                    "propertyIndex": 4,
-                    "propertyKey": "isHided",
-                    "pw": {
-                        "access": "readwrite",
-                        "dependencyConditions": {},
-                        "dependentKeysKUIDs": null,
-                        "displayName": "isHidedMenu",
-                        "isHiddenInTool": false,
-                        "srcWidget": "SearchMenu",
-                        "uiRepresentation": "Label-Radiobuttongroup",
-                        "wType": "UserWidgetInstance"
-                    },
-                    "srcWgtKUID": "j5c8c74bdbd247ecb10ad05c208ff1b5",
-                    "type": "boolean",
-                    "value": "true/false"
-                },
-                {
-                    "access": "Enable",
                     "group": "General",
                     "kuid": "ja3ff7dc0fa447be8348f6a2d1259dfc",
-                    "originalPropertyKey": "top1",
+                    "originalPropertyKey": "top",
                     "propertyIndex": 5,
-                    "propertyKey": "top1",
+                    "propertyKey": "TopSeach",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
@@ -150,7 +128,7 @@
                         },
                         "dependencyConditions": {},
                         "dependentKeysKUIDs": null,
-                        "displayName": "TopSearch",
+                        "displayName": "TopSeach",
                         "forkablePlatforms": {
                             "desktop": [
                                 "desktopweb",
@@ -174,7 +152,7 @@
                             ]
                         },
                         "isHiddenInTool": false,
-                        "srcWidget": "SearchMenu",
+                        "srcWidget": "FlxSearchMenu",
                         "type": "object",
                         "uiConfig": {
                             "Combobox": {
@@ -201,6 +179,49 @@
                             "Textbox": {}
                         },
                         "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ab2367b6f1234614890f24d312a6469a"
+                },
+                {
+                    "access": "Enable",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "da9ca2bd943a4476b370acd10a33bdb7",
+                    "originalPropertyKey": "isHided",
+                    "propertyIndex": 7,
+                    "propertyKey": "isHided",
+                    "pw": {
+                        "access": "readwrite",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "isHided",
+                        "isHiddenInTool": false,
+                        "srcWidget": "SearchMenu",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "UserWidgetInstance"
+                    },
+                    "srcWgtKUID": "j5c8c74bdbd247ecb10ad05c208ff1b5",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f9a3cc675d46446c9cd94b2ee431b27d",
+                    "originalPropertyKey": "isModalContainer",
+                    "propertyIndex": 8,
+                    "propertyKey": "isModalContainer",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Modal Container",
+                        "isHiddenInTool": false,
+                        "srcWidget": "SearchMenu",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
                         "wType": "UserWidgetInstance"
                     },
                     "srcWgtKUID": "j5c8c74bdbd247ecb10ad05c208ff1b5"

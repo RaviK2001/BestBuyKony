@@ -1,5 +1,5 @@
 //Type your code here
-async function animationShowHide(widget,status,hide,show){ 
+function animationShowHide(widget,status,hide,show,view){ 
   animationDef = {
     "100": {
       "top": status === true ? show : hide  
@@ -13,7 +13,20 @@ async function animationShowHide(widget,status,hide,show){
   animationDefObject = kony.ui.createAnimation(
     animationDef
   );
-  widget.animate(animationDefObject, animationConfig, null);    
+  widget.animate(animationDefObject, animationConfig, {
+    animationStart:()=>{
+      if(view){
+        view.zIndex = 3; 
+      }
+    },
+    animationEnd:()=>{
+      if(view){
+        status = !status 
+        view.zIndex = status ? 1 : 3
+
+      } 
+
+    }});    
 }
 
 function animationShowHideMenu(widget,view,hide,show){
@@ -35,8 +48,8 @@ function animationShowHideMenu(widget,view,hide,show){
       view.zIndex = 3; 
     },
     animationEnd:()=>{
-   view.zIndex = widget.left === '-87%' ? 1 : 3
-   view.FlxBody.isModalContainer = widget.left ===  '-87%' ? false : true
+      view.zIndex = widget.left === '-87%' ? 1 : 3
+      view.FlxBody.isModalContainer = widget.left ===  '-87%' ? false : true
 
     }});    
 }

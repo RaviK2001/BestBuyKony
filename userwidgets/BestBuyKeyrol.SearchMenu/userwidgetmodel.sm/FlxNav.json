@@ -35,8 +35,7 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "FlxInput",
-        "BtnCancel"
+        "FlxInput"
     ],
     "clipbounds": true,
     "containerweight": 100,

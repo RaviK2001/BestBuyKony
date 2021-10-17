@@ -76,7 +76,7 @@ function isOnSale(){
   let onSale = false;
 
   cart.forEach(item => {
-    if(item.LblPrice.skin === 'skinOffer')
+    if(item.LblPrice.skin === 'skinOfferProductList')
     {
       onSale = true;
     }

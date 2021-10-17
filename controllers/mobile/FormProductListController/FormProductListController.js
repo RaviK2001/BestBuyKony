@@ -1,6 +1,6 @@
 define({ 
   onNavigate : function(context){
-    elements = {widget: this.view.SgmProductList,lastId: 0,LblPage: this.view.LblCurrentPage,listPages:this.view.ListBoxPage };
+    elements = {widget: this.view.SgmProductList,lastId: 0,LblPage: this.view.LblCurrentPage,listPages:this.view.ListBoxPage ,noItems : this.view.FlxNoItems};
     this.view.SgmProductList.onRowClick = OnClickProduct;
     const ProductContext = kony.store.getItem('LastProductList');
     elements.lastId = context ? context.LastId : ProductContext.LastId;
@@ -23,7 +23,9 @@ define({
     : 'Category: ' + ProductContext.name
 
     this.view.BestBuyHeader.onClickBack = () => {
-      backProduct(context ? context.LastId : ProductContext.LastId,'Home');};
+      const id = context ? context.LastId : ProductContext.LastId
+
+      backProduct( id ? id : 0,'Home');};
 
     this.view.ListBoxPage.masterData = calculateTotalPages();
     this.view.ListBoxPage.selectedKey = 1

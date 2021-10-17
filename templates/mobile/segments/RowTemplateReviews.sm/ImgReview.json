@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "70px"
+        "value": "100px"
     },
     "_left_": {
         "type": "string",
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "170px"
+        "value": "200px"
     },
     "canUpdateUI": true,
     "containerId": true,

@@ -72,14 +72,15 @@ function MapDataProduct(res,elements,filter){
           'LblProductName':{ 'text' : product.name  },
           'id': product.id ,
           'LblPrice': {'text' : 
-                       '$'+ product.salePrice, 'skin' :product.onSale ? 'skinOffer' : 'SkinNormalText' },
+                       '$'+ product.salePrice, 'skin' :product.onSale ? 'skinOfferProductList' : 'SkinNormalText' },
           'ImgProduct' : {'src' : MainImg},
           'LblFreeShipping':{
             'isVisible' : product.freeShippingEligible,  
           },
           'LblReview':{
-            'text': product.customerReviewAverage ? product.customerReviewAverage : ''
+            'text': product.customerReviewAverage ? 'Avg User Rating: '+product.customerReviewAverage : ''
           },
+          'stars' : product.customerReviewAverage,
           'shortDescription': product.shortDescription,
           'backId' : product.categoryPath[product.categoryPath.length - 1].id,
           'sku' : product.sku , 
@@ -99,11 +100,14 @@ function MapDataProduct(res,elements,filter){
       else{
         elements.widget.setData(arry) ;
       }
-
+      elements.noItems.isVisible = false
+      elements.widget.isVisible = true
     }
     else{
-      alert('Theres no subcategories to show at this moment');
+      alert('Theres no produucts to show at this moment');
       elements.widget.setData([]);
+      elements.noItems.isVisible = true
+      elements.widget.isVisible = false
 
     }
     kony.application.dismissLoadingScreen(); 

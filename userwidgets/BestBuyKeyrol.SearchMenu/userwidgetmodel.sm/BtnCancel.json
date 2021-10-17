@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "50dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -25,7 +25,7 @@
     "_text_": "Cancel",
     "_top_": {
         "type": "string",
-        "value": "18dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -42,7 +42,7 @@
     "isvisible": true,
     "kuid": "c0de527a6b7d483799def72cbafb4edc",
     "name": "kony.ui.Button",
-    "parent": "FlxNav",
+    "parent": "FlxInput",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

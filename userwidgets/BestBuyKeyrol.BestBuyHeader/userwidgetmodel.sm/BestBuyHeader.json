@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "FlxBody",
-        "SearchMenu"
+        "FlxSearchMenu"
     ],
     "clipbounds": true,
     "containerweight": 100,

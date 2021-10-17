@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "BestBuyHeader",
-        "FlxBody"
+        "FlxBody",
+        "BestBuyHeader"
     ],
     "clipbounds": true,
     "containerweight": 100,

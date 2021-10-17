@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
@@ -38,9 +38,7 @@
     "canUpdateUI": true,
     "children": [
         "FlxProductDetails",
-        "FlxDescription",
-        "BtnAddToCar",
-        "FlxDivider"
+        "FlxDescription"
     ],
     "clipbounds": true,
     "containerweight": 100,

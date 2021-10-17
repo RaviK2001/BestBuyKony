@@ -25,7 +25,7 @@
     "_skin_": "sfd3918f00ba45dcafaf6e61f4297739",
     "_top_": {
         "type": "string",
-        "value": "60%"
+        "value": "40%"
     },
     "_width_": {
         "type": "string",
@@ -35,6 +35,8 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
+        "BtnAddToCar",
+        "FlxDivider",
         "LblReviewCount"
     ],
     "clipbounds": true,
@@ -45,7 +47,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "a561515ab0c3405daa54b499a1b6f4e7",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "FlxMain",
     "pf": "ProductDetailsForm",

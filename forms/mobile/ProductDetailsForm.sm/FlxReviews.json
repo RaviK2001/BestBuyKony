@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "ImgArrow",
-        "SgmReviews"
+        "FlxSgmReview"
     ],
     "clipbounds": true,
     "containerweight": 100,

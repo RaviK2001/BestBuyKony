@@ -11,7 +11,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "debef9ba6fc84d7a92382335edc802c5",
+                    "kuid": "ded145f4485f44f99da6f514dfd0fa68",
                     "originalPropertyKey": "onClick",
                     "propertyIndex": 1,
                     "propertyKey": "onClickCancel",
@@ -123,7 +123,7 @@
                     "kuid": "ff106f1c2b3b4698933655efe2adadf1",
                     "originalPropertyKey": "top",
                     "propertyIndex": 6,
-                    "propertyKey": "top1",
+                    "propertyKey": "TopSearch",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",

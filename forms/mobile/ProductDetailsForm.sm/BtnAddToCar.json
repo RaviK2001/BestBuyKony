@@ -46,7 +46,7 @@
     "isvisible": true,
     "kuid": "bb83fe34b895448a8493362d9467355e",
     "name": "kony.ui.Button",
-    "parent": "FlxBody",
+    "parent": "FlxReviewsCount",
     "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -8,7 +8,7 @@ define(function() {
         const filter = this.view.ListFilter.selectedKey === 'NotSelected' ? '' :  '&' + this.view.ListFilter.selectedKey;
 
 
-        if(txtBox.text ==='') {
+        if(!txtBox.text) {
           alert('Please write a search criteria');
         } 
         else{

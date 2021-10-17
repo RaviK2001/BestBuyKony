@@ -29,13 +29,14 @@
     },
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "TxtSearchName"
+        "TxtSearchName",
+        "BtnCancel"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -55,5 +56,6 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 3
 }

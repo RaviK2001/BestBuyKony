@@ -1,10 +1,12 @@
 define({ 
 
   onNavigate: function(id) { 
-    if(!id){
-      this.view.BestBuyHeader.TopSearch = '100%'
+    if(!id && id!==0){ 
+      this.view.BestBuyHeader.TopSeach = '100%'
       this.view.BestBuyHeader.isHided = true
+      this.view.BestBuyHeader.isModalContainer = false
 
+      this.view.BestBuyHeader.zIndex = 1
     }
     elements = {lbl:this.view.LblHome,widget: this.view.SgmCategories, backButton: this.view.BestBuyHeader};
     CallServiceCategorie(

@@ -185,7 +185,7 @@
     ],
     "_height_": {
         "type": "string",
-        "value": "150dp"
+        "value": "100%"
     },
     "_indicator_": "none",
     "_left_": {
@@ -205,22 +205,15 @@
         0,
         0
     ],
-    "_top_": {
-        "type": "number",
-        "value": "-10"
-    },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "100%"
     },
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "counter": "09",
+    "disabledSkins": {},
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
@@ -249,7 +242,7 @@
         "position": "bottom",
         "vdistance": 1
     },
-    "parent": "FlxReviews",
+    "parent": "FlxSgmReview",
     "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -276,7 +269,7 @@
     "showscrollbars": false,
     "swipeContext": {
         "currentPage": 0,
-        "imageWidth": 966,
+        "imageWidth": 960,
         "widthRatio": 0
     },
     "viewtype": "pageview",
@@ -290,5 +283,6 @@
         "LblReview": "LblReview",
         "LblReviewAutor": "LblReviewAutor"
     },
+    "widgetskin": "sc4ba6286f264b36ae00fea9ad6d22b6",
     "zindex": 1
 }

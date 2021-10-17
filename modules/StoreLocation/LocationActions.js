@@ -1,5 +1,5 @@
 function FindLocation(text,map){
-  if(text.trim() !== ''){
+  if(text && text.trim() !== ''){
     const regex = /^(\w+ ?)*$/; 
     let RegexValid =  regex.test(text);
     if(RegexValid){
