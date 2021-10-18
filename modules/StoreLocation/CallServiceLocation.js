@@ -16,7 +16,8 @@ function CallServiceLocation(callConfig,mapWidget){
     if(Cities.length > 0){
 
       //             mapWidget.addPin(Cities[0])
-      AddPinsToMap(Cities,mapWidget) 
+      currentPins.push(...Cities)
+      AddPinsToMap(currentPins,mapWidget) 
 
 
     }

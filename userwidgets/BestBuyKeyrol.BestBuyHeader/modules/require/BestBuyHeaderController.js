@@ -34,35 +34,36 @@ define(function() {
       this.view.Flxsearch.onTouchStart = () => {
         animationShowHide(this.view.FlxSearchMenu,this.view.SearchMenu.isHided,'100%','0%',this.view)
         this.view.SearchMenu.isHided = !this.view.SearchMenu.isHided
-        this.view.SearchMenu.isModalContainer = !this.view.Flxsearch.isHided
+        this.view.SearchMenu.isModalContainer = true 
 
       }
       this.view.SearchMenu.onClickCancel = () => {
-
         animationShowHide(this.view.FlxSearchMenu,this.view.SearchMenu.isHided,'100%','0%',this.view)
-
+ 
         this.view.SearchMenu.isHided = !this.view.SearchMenu.isHided
-        this.view.SearchMenu.isModalContainer = !this.view.Flxsearch.isHided
+
+        this.view.SearchMenu.isModalContainer = false
+
 
       } 
     },
     //Logic for getters/setters of custom properties
     initGettersSetters: function() {
-            const search = this.view.Flxsearch;
-            const view = this.view;
-            defineGetter(this, 'BackId', () => {
-                return this._BackId;
-            });
-            defineSetter(this, 'BackId', value => {
-                this._BackId = value;
-            });
-            /*defineGetter(this, 'hidedSearch', () => {
+      const search = this.view.Flxsearch;
+      const view = this.view;
+      defineGetter(this, 'BackId', () => {
+        return this._BackId;
+      });
+      defineSetter(this, 'BackId', value => {
+        this._BackId = value;
+      });
+      /*defineGetter(this, 'hidedSearch', () => {
                 return this._hidedSearch;
             });*/
-            /*defineSetter(this, 'hidedSearch', value => {
+      /*defineSetter(this, 'hidedSearch', value => {
                 this._hidedSearch = value;
             });*/
-        } 
+    } 
   };
 
 });

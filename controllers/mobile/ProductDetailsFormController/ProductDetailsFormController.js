@@ -6,7 +6,7 @@ define({
     this.view.LblPrice.text =Product.onSale ? 'On Sale! '+ Product.LblPrice.text :Product.LblPrice.text ;
     this.view.LblPrice.skin = Product.LblPrice.skin;
     this.view.ImgProduct.src = Product.ImgProduct.src;
-    this.view.LblReview.text = Product.LblReview.text ?'Avg User Rating: ' + Product.LblReview.text : '';
+    this.view.LblReview.text = Product.LblReview.text ? Product.LblReview.text : '';
     this.view.LblDescription.text = Product.shortDescription ?Product.shortDescription : 'There is not a description provided';
     this.view.ImgReview.src = `ratings_star_${Math.floor(+Product.stars)}.png`;
     this.view.ImgReview.isVisible = Product.LblReview.text ? true : false
