@@ -28,6 +28,10 @@
         "value": "40%"
     },
     "android": {
+        "nativeListFieldSkin": "s2e1d532629441afa52f11f9d670088a",
+        "psp": {
+            "placeholderSkin": "s2036298e3774ea0b99ce5ec7d41c7c5"
+        },
         "viewType": 4
     },
     "canUpdateUI": true,
@@ -37,6 +41,7 @@
     },
     "containerweight": 100,
     "contentalignment": 4,
+    "disabledSkins": {},
     "dropdownimage": "listboxarw.png",
     "focusskin": "sbc20b2779f84c86a319f7faaf43a760",
     "groupcells": false,
@@ -64,11 +69,11 @@
     "pf": "FormProductList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "selectedkey": "3",
+    "selectedkey": "1",
     "selectedkeys": null,
     "selectedkeyvalue": [
-        "3",
-        "3"
+        "1",
+        "1"
     ],
     "selectedkeyvalues": null,
     "size": 18,

@@ -48,7 +48,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "Pixel3",
+    "device": "Pixel3XL",
     "displayorientation": 3,
     "enabledforidletimeout": false,
     "id": "ProductDetailsForm",
@@ -103,7 +103,7 @@
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "android",
-    "prevDevice": "iPhone11",
+    "prevDevice": "Pixel2",
     "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

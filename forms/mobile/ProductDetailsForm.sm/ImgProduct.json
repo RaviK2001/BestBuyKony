@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "150dp"
+        "value": "90dp"
     },
     "_left_": {
         "type": "string",
@@ -26,11 +26,11 @@
     "_src_": "imagedrag.png",
     "_top_": {
         "type": "string",
-        "value": "10dp"
+        "value": "5dp"
     },
     "_width_": {
         "type": "string",
-        "value": "300px"
+        "value": "200px"
     },
     "canUpdateUI": true,
     "containerweight": 100,

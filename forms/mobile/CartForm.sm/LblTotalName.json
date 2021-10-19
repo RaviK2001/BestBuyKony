@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "150dp"
+        "value": "100dp"
     },
     "_margin_": [
         1,
@@ -25,11 +25,11 @@
     "_text_": "Total:",
     "_top_": {
         "type": "string",
-        "value": "50dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "18%"
+        "value": "20%"
     },
     "_wrapping_": 2,
     "android": {

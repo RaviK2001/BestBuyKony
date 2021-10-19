@@ -104,7 +104,7 @@ function MapDataProduct(res,elements,filter){
       elements.widget.isVisible = true
     }
     else{
-      alert('Theres no produucts to show at this moment');
+//       alert('Theres no products to show at this moment');
       elements.widget.setData([]);
       elements.noItems.isVisible = true
       elements.widget.isVisible = false

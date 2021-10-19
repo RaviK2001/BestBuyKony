@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "50dp"
+        "value": "40dp"
     },
     "_left_": {
         "type": "string",
@@ -25,7 +25,7 @@
     "_text_": "Add To Car",
     "_top_": {
         "type": "string",
-        "value": "30dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",

@@ -1,4 +1,7 @@
 {
+  "android": {
+    "font_name": "default"
+  },
   "androidwearos": {
     "font_name": "default"
   },
@@ -11,7 +14,7 @@
   "desktopweb": {
     "font_name": "Helvetica"
   },
-  "font_color": "0d0d0dff",
+  "font_color": "000000ff",
   "font_name": "iphoneSystem",
   "font_size": 107,
   "font_style": "normal",
@@ -26,7 +29,7 @@
   "kiosk": {
     "font_name": "None"
   },
-  "kuid": "sc7339f9a80b4647a66c1220b7dccde9",
+  "kuid": "s2036298e3774ea0b99ce5ec7d41c7c5",
   "spaan": {
     "font_name": "Helvetica"
   },
