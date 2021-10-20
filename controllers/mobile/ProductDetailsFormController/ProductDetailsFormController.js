@@ -27,7 +27,7 @@ define({
       addToCar(Product);
     };
     this.view.ImgArrow.onTouchEnd =()=> { 
-      animationShowHide(this.view.FlxReviews,this.view.FlxReviews.top === '95%' ? true : false,'95%','60%');
+      animationShowHide(this.view.FlxReviews,this.view.FlxReviews.top === '95%' ? true : false,'95%','70%');
       this.view.ImgArrow.src = this.view.FlxReviews.top === '95%' ? 'downarrow.png' : 'uparrow.png';
     };
   },

@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_bottom_": {
         "type": "string",
-        "value": "5dp"
+        "value": "15dp"
     },
     "_height_": {
         "type": "ref",

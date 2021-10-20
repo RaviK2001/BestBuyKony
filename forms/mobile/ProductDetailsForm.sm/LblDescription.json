@@ -1,10 +1,6 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
-    "_bottom_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_height_": {
         "type": "ref",
         "value": "preferred"
@@ -39,10 +35,6 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "25%"
-    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "LblDescription",
@@ -61,7 +53,7 @@
     "isvisible": true,
     "kuid": "c4e4b311783a4f6eb5cab40ff96f2b61",
     "name": "kony.ui.Label",
-    "parent": "FlxDescription",
+    "parent": "FlxBody",
     "pf": "ProductDetailsForm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
